@@ -1,0 +1,114 @@
+
+                                                          **************** 
+                                                          || HTML Notes ||
+                                                          ****************
+
+-> HTML stands for "Hyper Text Markup Language".
+   
+   "Hyper Text" :: (1) The way in which the web pages (HTML documents) are linked together.
+                   (2) The link provided in the web pages. 
+   
+   "Markup Language" :: Language used to define the web page (HTML document) with various 
+                        tags that tells the web browser how to structure it to display.
+
+-> Founder: Berners-Lee
+
+-> Release: 
+   1. Year 1991:: Initial Release
+   2. Year 1995:: HTML 2.0 (Standard Release)
+   3. Year 1999:: HTML 4.01 (Major Release)
+   4. Year 2012:: HTML 5 (Latest Release)
+
+-> World Wide Web Consortium (W3C) recommends to use lowercase tags from HTML 4 and onwards.
+   For more about World Wide Web Consortium (W3C), visit: https://www.w3.org/
+
+-> To know all the HTML tags and their attributes, refer: 
+   https://www.tutorialspoint.com/html/html_tags_reference.htm   
+
+-> Overview / Structure:
+   <!DOCTYPE ...> :: Defines the document type and html version.
+   <html> :: Encloses the entire HTML document.
+             It contains a <head> and a <body> tag.
+   <head> :: Represents the HTML document header.
+             It contains tags like <meta>, <title> and <link> etc. 
+   <title> :: Represents the HTML document title.
+   <body> :: Represents the body of the HTML document.
+             It contains tags like <h1> to <h6>, <section>, <div> and <p> etc. 
+   
+   For demo refer to "hello.html" file.
+   
+-> Basic Tags:
+   <h1> to <h6> :: HEADING TAGS: Six levels of HEADING having different sizes.
+                                 "h1" is the largest heading and "h6" is the smallest heading.
+   <p> :: PARAGRAPH TAG: Represents a paragraph.
+   <br /> :: LINE BREAK TAG: Breaks the line and starts the text or anything following it from the next line.
+   <hr /> :: HORIZONTAL LINE TAG: Draws a horizontal line.
+   <center> :: CENTER TAG: Puts the content inside it to the center of the HTML document or table cell.
+   <pre> :: PRESERVER FORMAT TAG: Preserves the text inside it and displays the text in the exact format it is
+                                  written by the user/developer.
+   &nbsp; :: NON-BREAKING SPACE: Applies non breaking spaces between the texts if applied instead of normal spaces
+                                 between the texts. It prevents the splitting/breaking of the text across two lines.    
+
+   For demo refer to "index.html" and "index02.html".                              
+
+-> Elements: 
+   HTML Elements basically have 3 parts. 
+   They are - 1. Starting Tag
+              2. Content     
+              3. Ending Tag [Always preceded with a forward slash("/").]
+   Example: "<p>A simple paragraph.</p>"
+            Here "<p>" is the starting tag; "</p>" is the ending tag and 
+            the text, "A simple paragraph." is the content of the paragraph element.                                        
+                                 
+-> Empty Elements: 
+   (1) The <br />, <hr /> and <img /> etc. tags are the examples of EMPTY ELEMENTS  
+       or VOID ELEMENTS i.e. these do not have any enclosing tag as they contain nothing.
+   (2) Empty elements must have space between the the characters("br" or "hr" or "img") and 
+       forward slash("/") otherwise, older browsers will be troubled rendering them.
+   (3) Missing the forward slash("/") will make the empty elements invalid for XHTML.                                
+   (4) For more details, visit:    
+       https://www.geeksforgeeks.org/what-are-empty-elements-in-html/
+
+-> Nested Element:
+   Element(s) inside another element is called as NESTED ELEMENT(S).        
+
+-> Attributes:
+   The attribute defines the characteristics of an HTML element.
+   The attributes have two parts. They are - 1. Name
+                                             2. Value
+   Example: align = "center"
+            Here "align" is the name of the attribute and "center" is the value of
+            the attribute". The "align" attribute aligns the text/content to the specified position.
+            
+   World Wide Web Consortium (W3C) recommends to use lowercase attribute names and values from HTML 4 and onwards.
+   For more about World Wide Web Consortium (W3C), visit: https://www.w3.org/         
+            
+   For demo refer to "index03.html".
+
+-> Core Attributes:
+   There are 4 core attributes used in majority of the HTML elements. 
+   
+   They are -
+   1. id :: It is used to uniquely identify any element inside the HTML document.
+   2. title :: Defines the pop-up title of the element.
+               When cursor is hovered over the element with title having a value, the 
+               value of the title is displayed and moving the cursor away from the element 
+               will hide the value of the title.     
+   3. class :: Used to specify one or multiple CSS(Cascading Style Sheet) classes with space(s)   
+               for styling of elements.
+   4. style :: Allows to specify CSS(Cascading Style Sheet) rules within an element.
+
+   For demo refer to "index04.html".
+
+-> Internationalization Attributes:
+   There are 3 internationalization attribute available for most of the XHTML elements.
+   
+   They are -
+   1. dir :: Defines the direction in which the text should flow.
+             For demo refer to "index05.html". 
+   2. lang :: Indicates the main language used inside the document.
+   3. xml:lang :: XHTML replacement of the "lang" attribute.
+
+-> Generic Attributes:
+   Reference: "HTML Generic Attributes.png"
+
