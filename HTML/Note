@@ -112,3 +112,28 @@
 -> Generic Attributes:
    Reference: "HTML Generic Attributes.png"
 
+-> Formatting / Text Formatting: 
+   <b> :: BOLD TEXT: Makes the enclosed text as bold text.
+   <i> :: ITALIC TEXT: Italicizes the enclosed text.  
+   <tt> :: MONOSPACED FONT: Represents the enclosed text with monospaced font.
+                            In monospaced font, all characters have same width.      
+   <u> :: UNDERLINED TEXT: Underlines the enclosed text.
+   <strike> :: STRIKE TEXT: Enclosed text is displayed with strikethrough i.e;
+                            a thin line through the enclosed text. 
+   <ins> :: INSERTED TEXT: Represents the enclosed text as a inserted text.
+   <del> :: DELETED TEXT: Represents the enclosed text as a deleted text. 
+   <big> :: LARGER TEXT: Represents the enclosed text with 1 font larger than the current font size.
+   <small> :: SMALLER TEXT: Represents the enclosed text with 1 font smaller than the current font size.
+   <sub> :: SUBSCRIPT TEXT: Represents the enclosed text as a subscript.
+   <sup> :: SUPERSCRIPT TEXT: Represents the enclosed text as a superscript.      
+      
+   For demo refer to "index06.html".   
+
+ -> Grouping Content:
+    (1) The <div> and <span> elements are used to group together several elements
+        to create sections or subsections of a HTML page.
+    (2) <span> is used for grouping of inline elements only such as a part of a 
+        sentence or paragraph.  
+     
+    For demo refer to "index07.html".    
+
