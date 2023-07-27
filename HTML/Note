@@ -137,3 +137,28 @@
      
     For demo refer to "index07.html".    
 
+ -> Phrase Tags:  
+    <em> :: EMPHASIZED TEXT: Represents the enclosed text as emphasized text. 
+    <mark> :: MARKED TEXT:  Represents the enclosed text as marked text with yellow ink.
+    <strong> :: STRONG TEXT: Represents the enclosed text as important text.
+    <abbr> :: TEXT ABBREVIATION: Represents the enclosed text as abbreviation text.
+                                 It must contain the "title" attribute with full description only.    
+    <acronym> :: ACRONYM TEXT: Represents the enclosed text as an acronym.
+                               Currently major browsers do not change the appearance of acronym.
+    <bdo> :: BI-DIRECTIONAL OVERRIDE: Overrides the enclosed text direction.   
+    <dfn> :: DEFINITION ELEMENT: Represents the enclosed text as a special term when a new key term is 
+                                 introduced. Most browsers render it's content in italic font.           
+    <blockquote> :: BLOCK QUOTATION: Represents the enclosed text as an passage from another source.   
+    <q> :: SHORT QUOTATION: Adds double quote to the enclosed text.
+    <cite> :: TEXT CITATION: Represents the enclosed text as source of a quoted text.
+                             The content is rendered in italicized text by default.
+    <code> :: COMPUTER CODE: Represents the enclosed text as computer program code.
+                             The content is displayed in monospaced font.
+    <kbd> :: KEYBOARD TEXT: Represents the enclosed text as the text to be typed/entered through the
+                            keyboard by the reader while talking about computer related stuffs.
+    <var> :: COMPUTER VARIABLES: Represents the enclosed text as a programming variable.
+                                 Usually used in conjunction with the <pre> and <code> elements.
+    <samp> :: SAMPLE PROGRAM OUTPUT: Represents the enclosed text as sample output of a computer program
+                                     or script etc.
+    <address> :: ADDRESS TEXT: Represents the enclosed text as a location address.                                                                   
+
