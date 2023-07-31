@@ -160,5 +160,73 @@
                                  Usually used in conjunction with the <pre> and <code> elements.
     <samp> :: SAMPLE PROGRAM OUTPUT: Represents the enclosed text as sample output of a computer program
                                      or script etc.
-    <address> :: ADDRESS TEXT: Represents the enclosed text as a location address.                                                                   
+    <address> :: ADDRESS TEXT: Represents the enclosed text as a location address. 
+      
+    For demo refer to "index08.html".  
+    
+ -> Comments:
+    (1) "A COMMENT is a piece of code that is ignored by the web browser."
+    (2) Comments increase code readability and helps the developer and others to understand the code. 
+    (3) Comments do not nest.
+    (4) There should be no space at the starting and at the ending of the comment string. 
+    (5) Examples: 1. "<!-- A sample valid single line comment. -->" 
+                  2. "<!-- A sample valid
+                           multi line
+                              comment.
+                     -->"
 
+    For demo refer to "index09.html".
+
+  -> Images:
+     <img/> :: IMAGE TAG: Inserts an image in a web page.   
+               Attributes => src - Path to a valid image file(PNG / JPEG / GIF). [Mandatory Attribute]
+                             alt - Represents the alternative text for an image if the image cannot
+                                   be displayed or was not fount. [Mandatory Attribute]
+                             width - Sets image width in terms of pixels or percentage.
+                             height - Sets image height in terms of pixels or percentage.       
+                             border - Sets image border with provided thickness.
+                                      "0" thickness means no border.
+                             align - Sets the image alignment to the center or right side of the page.    
+                           
+    For demo refer to "index10.html".    
+    
+    
+   -> Tables: 
+      Tables allow us to arrange data like text, images, links and other tables etc. into rows and columns 
+      of cell.
+      
+      <table> :: TABLE: Represents a entire table.
+                 Attributes => border - Sets table border with provided thickness.
+                                        "0" thickness means no border.
+                               cellpadding - Represents the distance between cell borders and content
+                                             within the cell.
+                               cellspacing - Represents the space between table cells.
+                               width - Sets table width in terms of pixels or percentage.
+                               height - Sets table height in terms of pixels or percentage.
+
+      <tr> :: TABLE ROW: Represents table rows.
+      <td> :: TABLE DATA: Represents table data cells.
+                          By default it's content are left aligned.
+              Attribute => rowspan - Merges two or more rows into a single row.
+                           colspan - Merges two or more columns into a single column. 
+      <th> :: TABLE HEADING: Represents the heading of each column of a table. 
+                             By default, it's content are center aligned and bold.  
+      <caption> :: TABLE CAPTION: Represents the title or explanation for the table 
+                                  and it shows up at the top of the table. [Deprecated]         
+         
+      Other Attributes:
+      bgcolor - Sets background color for whole table or just for one cell. [Deprecated]   
+      background - Sets background image for whole table or just for one cell. [Deprecated]
+      bordercolor - Specifies the border color of the table. [Deprecated]
+      
+      A table may be divided into 3 portions. They are -
+      <thead> :: TABLE HEAD: Represents a separate table header.  
+      <tbody> :: TABLE BODY: Represents the main content of the table.
+      <tfoot> :: TABLE FOOT: Represents a separate table footer. 
+
+      Nested Table:
+      One table inside another table.   
+
+      For demo refer to "index10.html".
+
+      

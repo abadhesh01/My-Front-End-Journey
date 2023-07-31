@@ -1,0 +1,175 @@
+
+<!--
+    Author: Abadhesh Mishra
+    Email: abadheshmishra01@gmail.com
+    GitHub: https://github.com/abadhesh01
+    GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Tags and Attributes Learned:
+    1. <table></table>  [Attributes: border, bordercolor (deprecated), cellpadding, cellspacing, width, height]
+    2. <thead></thead>
+    3. <tbody></tbody>
+    4. <tfoot></tfoot>
+    5. <tr></tr>
+    6. <th></th>
+    7. <td></td> [Attributes: rowspan, colspan]
+    8. <caption></caption> [deprecated]
+
+    Other Attributes Learned:
+    1.bgcolor [deprecated]
+    2.background [deprecated]
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body style="background-color: burlywood;">
+    <div id="heading" style="background-color: green; color: greenyellow; text-align: center;">
+        <h1>Sample Table Demo</h1>
+    </div>
+    <div id="main" style="color: blueviolet; font-family: monospace; font-size: x-large;">
+        
+        <!-- TABLE DEMO 1-->
+        <span style="font-weight: bold;">Table Demo 1:</span>
+        <div id="table1">
+        <p>
+        <!--Table 1 Starting.-->
+        <table style="margin-left: auto; margin-right: auto"
+         bgcolor="#1EF5B4"
+         border="5";
+         cellpadding="20";
+         cellspacing="10";
+        >
+            <tr>
+                <th>Sample Heading 0</th>
+                <th>Sample Heading 1</th>
+                <th>Sample Heading 2</th>
+            </tr>
+            <tr>
+                <td>Data 0x0</td>
+                <td>Data 0x1</td>
+                <td>Data 0x2</td>
+            </tr>
+            <tr>
+                <td>Data 1x0</td>
+                <td>Data 1x1</td>
+                <td>Data 1x2</td>
+            </tr>
+            <tr>
+                <td>Data 2x0</td>
+                <td>Data 2x1</td>
+                <td>Data 2x2</td>
+            </tr>
+        </table>
+        <!--Table 1 Ending.-->
+        </p>
+        </div>
+
+        <!--TABLE DEMO 2-->
+        <span style="font-weight: bold;">Table Demo 2:</span>
+        <div id="table2" style="text-align: center;">
+        <p>
+        <!--Table 2 Starting.-->    
+        <table style="margin-left: auto; margin-right: auto;"
+         background="https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Simple-White-Pattern-Background-Image.jpg";
+         border="5";
+         bordercolor="crimson";
+         cellpadding="20";
+         cellspacing="10";
+         height="1000px";
+         width="1100px"
+         >
+         <caption>Sample Table Caption</caption>
+         <thead><tr bgcolor="#F1F5BB"><td colspan="5">Sample Table Header</td></tr></thead>
+         <tbody>
+            <tr bgcolor="#F3B25D">
+                <th>Sample Heading 0</th>
+                <th>Sample Heading 1</th>
+                <th>Sample Heading 2</th>
+                <th>Sample Heading 3</th>
+                <th>Sample Heading 4</th>
+            </tr>
+            <tr>
+                <td>row 0 column 0</td>
+                <td>row 0 column 1</td>
+                <td>row 0 column 2</td>
+                <td>row 0 column 3</td>
+                <td>row 0 column 4</td>
+            </tr>
+            <tr>
+                <td>row 1 column 0</td>
+                <td>row 1 column 1</td>
+                <td>row 1 column 2</td>
+                <td>row 1 column 3</td>
+                <td>row 1 column 4</td>
+            </tr>
+            <tr>
+                <td>row 2 column 0</td>
+                <td>row 2 column 1</td>
+                <td>row 2 column 2</td>
+                <td>row 2 column 3</td>
+                <td>row 2 column 4</td>
+            </tr>
+            <tr>
+                <td>row 3 column 0</td>
+                <td>row 3 column 1</td>
+                <td>row 3 column 2</td>
+                <td>row 3 column 3</td>
+                <td>row 3 column 4</td>
+            </tr>
+            <tr>
+                <td>row 4 column 0</td>
+                <td>row 4 column 1</td>
+                <td>row 4 column 2</td>
+                <td>row 4 column 3</td>
+                <td>row 4 column 4</td>
+            </tr>
+            <tr>
+                <td>row 5 column 0</td>
+                <td>row 5 column 1</td>
+                <td colspan="3" bgcolor="#DABBF5">row 5 column 2,3,4</td>
+            </tr>
+            <tr>
+                <td rowspan="3" bgcolor="#BBE3F5">row 6,7,8 column 0</td>
+                <td>row 6 column 1</td>
+                <td>row 6 column 2</td>
+                <td>row 6 column 3</td>
+                <td>row 6 column 4</td>
+            </tr>
+            <tr>
+                <td>row 7 column 1</td>
+                <td>row 7 column 2</td>
+                <td>row 7 column 3</td>
+                <td>row 7 column 4</td>
+            </tr>
+            <tr>
+                <td>row 8 column 1</td>
+                <td>row 8 column 2</td>
+                <td>row 8 column 3</td>
+                <td>row 8 column 4</td>
+            </tr>
+            <tr>
+                <td>row 9 column 0</td>
+                <td>row 9 column 1</td>
+                <td>row 9 column 2</td>
+                <td>row 9 column 3</td>
+                <td>row 9 column 4</td>
+            </tr>
+         </tbody>
+         <tfoot><tr bgcolor="#BBF5E4"><td colspan="5">Sample Table Footer</td></tr></tfoot>
+        </table>
+        <!--Table 2 Ending.-->
+        </p>
+        </div>
+        
+    </div>
+</body>
+</html>
