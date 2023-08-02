@@ -129,57 +129,57 @@
       
    For demo refer to "index06.html".   
 
- -> Grouping Content:
-    (1) The <div> and <span> elements are used to group together several elements
-        to create sections or subsections of a HTML page.
-    (2) <span> is used for grouping of inline elements only such as a part of a 
-        sentence or paragraph.  
+-> Grouping Content:
+   (1) The <div> and <span> elements are used to group together several elements
+       to create sections or subsections of a HTML page.
+   (2) <span> is used for grouping of inline elements only such as a part of a 
+       sentence or paragraph.  
      
-    For demo refer to "index07.html".    
+   For demo refer to "index07.html".    
 
- -> Phrase Tags:  
-    <em> :: EMPHASIZED TEXT: Represents the enclosed text as emphasized text. 
-    <mark> :: MARKED TEXT:  Represents the enclosed text as marked text with yellow ink.
-    <strong> :: STRONG TEXT: Represents the enclosed text as important text.
-    <abbr> :: TEXT ABBREVIATION: Represents the enclosed text as abbreviation text.
-                                 It must contain the "title" attribute with full description only.    
-    <acronym> :: ACRONYM TEXT: Represents the enclosed text as an acronym.
-                               Currently major browsers do not change the appearance of acronym.
-    <bdo> :: BI-DIRECTIONAL OVERRIDE: Overrides the enclosed text direction.   
-    <dfn> :: DEFINITION ELEMENT: Represents the enclosed text as a special term when a new key term is 
-                                 introduced. Most browsers render it's content in italic font.           
-    <blockquote> :: BLOCK QUOTATION: Represents the enclosed text as an passage from another source.   
-    <q> :: SHORT QUOTATION: Adds double quote to the enclosed text.
-    <cite> :: TEXT CITATION: Represents the enclosed text as source of a quoted text.
-                             The content is rendered in italicized text by default.
-    <code> :: COMPUTER CODE: Represents the enclosed text as computer program code.
-                             The content is displayed in monospaced font.
-    <kbd> :: KEYBOARD TEXT: Represents the enclosed text as the text to be typed/entered through the
-                            keyboard by the reader while talking about computer related stuffs.
-    <var> :: COMPUTER VARIABLES: Represents the enclosed text as a programming variable.
-                                 Usually used in conjunction with the <pre> and <code> elements.
-    <samp> :: SAMPLE PROGRAM OUTPUT: Represents the enclosed text as sample output of a computer program
-                                     or script etc.
-    <address> :: ADDRESS TEXT: Represents the enclosed text as a location address. 
+-> Phrase Tags:  
+   <em> :: EMPHASIZED TEXT: Represents the enclosed text as emphasized text. 
+   <mark> :: MARKED TEXT:  Represents the enclosed text as marked text with yellow ink.
+   <strong> :: STRONG TEXT: Represents the enclosed text as important text.
+   <abbr> :: TEXT ABBREVIATION: Represents the enclosed text as abbreviation text.
+                                It must contain the "title" attribute with full description only.    
+   <acronym> :: ACRONYM TEXT: Represents the enclosed text as an acronym.
+                              Currently major browsers do not change the appearance of acronym.
+   <bdo> :: BI-DIRECTIONAL OVERRIDE: Overrides the enclosed text direction.   
+   <dfn> :: DEFINITION ELEMENT: Represents the enclosed text as a special term when a new key term is 
+                                introduced. Most browsers render it's content in italic font.           
+   <blockquote> :: BLOCK QUOTATION: Represents the enclosed text as an passage from another source.   
+   <q> :: SHORT QUOTATION: Adds double quote to the enclosed text.
+   <cite> :: TEXT CITATION: Represents the enclosed text as source of a quoted text.
+                            The content is rendered in italicized text by default.
+   <code> :: COMPUTER CODE: Represents the enclosed text as computer program code.
+                            The content is displayed in monospaced font.
+   <kbd> :: KEYBOARD TEXT: Represents the enclosed text as the text to be typed/entered through the
+                           keyboard by the reader while talking about computer related stuffs.
+   <var> :: COMPUTER VARIABLES: Represents the enclosed text as a programming variable.
+                                Usually used in conjunction with the <pre> and <code> elements.
+   <samp> :: SAMPLE PROGRAM OUTPUT: Represents the enclosed text as sample output of a computer program
+                                    or script etc.
+   <address> :: ADDRESS TEXT: Represents the enclosed text as a location address. 
       
-    For demo refer to "index08.html".  
+   For demo refer to "index08.html".  
     
- -> Comments:
-    (1) "A COMMENT is a piece of code that is ignored by the web browser."
-    (2) Comments increase code readability and helps the developer and others to understand the code. 
-    (3) Comments do not nest.
-    (4) There should be no space at the starting and at the ending of the comment string. 
-    (5) Examples: 1. "<!-- A sample valid single line comment. -->" 
-                  2. "<!-- A sample valid
+-> Comments:
+   (1) "A COMMENT is a piece of code that is ignored by the web browser."
+   (2) Comments increase code readability and helps the developer and others to understand the code. 
+   (3) Comments do not nest.
+   (4) There should be no space at the starting and at the ending of the comment string. 
+   (5) Examples: 1. "<!-- A sample valid single line comment. -->" 
+                 2. "<!-- A sample valid
                            multi line
                               comment.
                      -->"
 
-    For demo refer to "index09.html".
+   For demo refer to "index09.html".
 
-  -> Images:
-     <img/> :: IMAGE TAG: Inserts an image in a web page.   
-               Attributes => src - Path to a valid image file(PNG / JPEG / GIF). [Mandatory Attribute]
+-> Images:
+   <img/> :: IMAGE TAG: Inserts an image in a web page.   
+             Attributes =>   src - Path to a valid image file(PNG / JPEG / GIF). [Mandatory Attribute]
                              alt - Represents the alternative text for an image if the image cannot
                                    be displayed or was not fount. [Mandatory Attribute]
                              width - Sets image width in terms of pixels or percentage.
@@ -188,45 +188,98 @@
                                       "0" thickness means no border.
                              align - Sets the image alignment to the center or right side of the page.    
                            
-    For demo refer to "index10.html".    
+   For demo refer to "index10.html".    
     
     
-   -> Tables: 
-      Tables allow us to arrange data like text, images, links and other tables etc. into rows and columns 
-      of cell.
+-> Tables: 
+   Tables allow us to arrange data like text, images, links and other tables etc. into rows and columns 
+   of cell.
       
-      <table> :: TABLE: Represents a entire table.
-                 Attributes => border - Sets table border with provided thickness.
-                                        "0" thickness means no border.
-                               cellpadding - Represents the distance between cell borders and content
-                                             within the cell.
-                               cellspacing - Represents the space between table cells.
-                               width - Sets table width in terms of pixels or percentage.
-                               height - Sets table height in terms of pixels or percentage.
+   <table> :: TABLE: Represents a entire table.
+              Attributes => border - Sets table border with provided thickness.
+                                     "0" thickness means no border.
+                            cellpadding - Represents the distance between cell borders and content
+                                          within the cell.
+                            cellspacing - Represents the space between table cells.
+                            width - Sets table width in terms of pixels or percentage.
+                            height - Sets table height in terms of pixels or percentage.
 
-      <tr> :: TABLE ROW: Represents table rows.
-      <td> :: TABLE DATA: Represents table data cells.
-                          By default it's content are left aligned.
-              Attribute => rowspan - Merges two or more rows into a single row.
-                           colspan - Merges two or more columns into a single column. 
-      <th> :: TABLE HEADING: Represents the heading of each column of a table. 
-                             By default, it's content are center aligned and bold.  
-      <caption> :: TABLE CAPTION: Represents the title or explanation for the table 
-                                  and it shows up at the top of the table. [Deprecated]         
+   <tr> :: TABLE ROW: Represents table rows.
+   <td> :: TABLE DATA: Represents table data cells.
+                       By default it's content are left aligned.
+           Attribute => rowspan - Merges two or more rows into a single row.
+                        colspan - Merges two or more columns into a single column. 
+   <th> :: TABLE HEADING: Represents the heading of each column of a table. 
+                          By default, it's content are center aligned and bold.  
+   <caption> :: TABLE CAPTION: Represents the title or explanation for the table 
+                               and it shows up at the top of the table. [Deprecated]         
          
-      Other Attributes:
-      bgcolor - Sets background color for whole table or just for one cell. [Deprecated]   
-      background - Sets background image for whole table or just for one cell. [Deprecated]
-      bordercolor - Specifies the border color of the table. [Deprecated]
+   Other Attributes:
+   bgcolor - Sets background color for whole table or just for one cell. [Deprecated]   
+   background - Sets background image for whole table or just for one cell. [Deprecated]
+   bordercolor - Specifies the border color of the table. [Deprecated]
       
-      A table may be divided into 3 portions. They are -
-      <thead> :: TABLE HEAD: Represents a separate table header.  
-      <tbody> :: TABLE BODY: Represents the main content of the table.
-      <tfoot> :: TABLE FOOT: Represents a separate table footer. 
+   A table may be divided into 3 portions. They are -
+   <thead> :: TABLE HEAD: Represents a separate table header.  
+   <tbody> :: TABLE BODY: Represents the main content of the table.
+   <tfoot> :: TABLE FOOT: Represents a separate table footer. 
 
-      Nested Table:
-      One table inside another table.   
+   Nested Table:
+   One table inside another table.   
 
-      For demo refer to "index10.html".
+   For demo refer to "index11.html".
 
-      
+-> List:
+   A list is a collection of related items.
+   
+   There are 3 types of list. They are -
+   1. <ul> :: UNORDERED LIST: * Items have no special order / sequence.
+                              * Each item is marked with a bullet.   
+                              * Attribute => type - Specifies the type of bullet.
+                                                    The default type is "disc".
+                                                    Other values are "square" and "circle".
+                 
+   2. <ol> :: ORDERED LIST: * Items are put in a numbered list.
+                            * The numbering starts at one and is incremented 
+                              by one for each successive element.
+                            * Attribute => type - Specifies the type of numbering.
+                                                  The default type("1") is a number.     
+                                                  Value "I" for upper-case numerals.
+                                                  Value "i" for lower-case numerals.
+                                                  Value "A" for upper-case letters.
+                                                  Value "a" for lower-case letters.
+                                           start - Specifies the starting point of the numbering.
+
+   3. <dl> :: DEFINITION LIST: * Items are listed like in a dictionary or encyclopedia.
+                               * Idle for presenting a glossary, list of terms or other name / value list.
+                               
+                               
+   Other Elements:
+   <li> :: LIST ITEM: Represents an item in a ordered / unordered list.
+   <dt> :: TERM: Represents a term in a definition list.
+   <dd> :: TERM DEFINITION: Represents the definition of a term in a definition list.                                           
+
+   For demo refer to "index12.html".
+
+-> Inline Frame:
+   <iframe> :: INLINE FRAME: * Defines the rectangular region within the web page in 
+                               which a separate webpage / document can be displayed
+                               (including scrollbars and borders).
+                             * Attributes => src - URL / Path of the webpage / document.
+                                             name - Assigns a name to the frame.
+                                             frameborder - Determines whether to display borders of the frame or not.
+                                                           This attribute can have only 2 values i.e; "1" for YES and
+                                                           "0" for NO. [Deprecated]
+                                             height - Specifies the height of the frame.
+                                             width - Specifies the width of the frame.
+                                             marginheight - Specifies the height of the space between the top and the
+                                                            bottom of the frame's borders and its contents in terms of 
+                                                            pixels. [Deprecated]
+                                             marginwidth - Specifies the width of the space between the left and the
+                                                           right of the frame's borders and its contents in terms of 
+                                                           pixels. [Deprecated]
+                                             scrolling - Determines whether to provide scrollbars or not.
+                                                         The values are "yes", "no" or "auto". [Deprecated]
+                                             longdesc - Provides link to another document containing a long description
+                                                        of the contents of the frame. [Deprecated]                                                            
+                                                        

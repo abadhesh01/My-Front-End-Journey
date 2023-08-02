@@ -1,0 +1,153 @@
+
+<!--
+    Author: Abadhesh Mishra
+    Email: abadheshmishra01@gmail.com
+    GitHub: https://github.com/abadhesh01
+    GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Tag Learned: <iframe></iframe>
+    Attributes Learned: (1) src
+                        (2) name
+                        (3) frameborder [Deprecated]
+                        (4) height
+                        (5) width
+                        (6) marginheight [Deprecated]
+                        (7) marginwidth [Deprecated]
+                        (8) scrolling [Deprecated]
+                        (9) longdesc [Deprecated]
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Frame</title>
+</head>
+<body style="background-color: black; font-family: monospace; font-size: x-large; font-weight: bold; text-align: center;">
+    
+    <div id="heading" style="background-color: pink; color: crimson;">
+        <h1>Inline Frame Demo</h1>
+    </div>
+    
+    <div id="demo" style="background-color: beige;">
+        <span style="color: chocolate;">Sample Inline Frame:</span> <br />
+        <div style="height: 120px; width: 290px; border: 2px solid blue; text-align: left; margin: auto; color: blue;">
+        Specifications: <br />
+        [1] Height = 400 <br />
+        [2] Width = 1000 <br />
+        [3] Frameborder: Disabled <br />
+        [4] Scrolling: Not Defined <br /> 
+        </div> 
+        <!--
+            DEMO FRAME 1:
+            -------------
+            [1] Height = 400 
+            [2] Width = 1000 
+            [3] Frameborder: Disabled 
+            [4] Scrolling: Not Defined  
+        -->
+        <iframe src="http://127.0.0.1:5500/HTML/index12.html" frameborder="0" height="400" width="1000">
+            Sorry! :( <br />
+            Your browser does not supports inline frames. <br />
+        </iframe>
+    </div>
+    
+    <div id="demo2" style="background-color: aqua;">
+        <span style="color: darkblue;">Sample Another Inline Frame:</span> <br />
+        <div style="height: 120px; width: 290px; border: 2px solid blue; text-align: left; margin: auto; color: blue;">
+        Specifications: <br />
+        [1] Height = 400 <br />
+        [2] Width = 1000 <br />
+        [3] Frameborder: Enabled <br />
+        [4] Scrolling: Not Defined <br /> 
+        </div>
+        <!--
+            DEMO FRAME 2:
+            -------------
+            [1] Height = 400 
+            [2] Width = 1000 
+            [3] Frameborder: Enabled 
+            [4] Scrolling: Not Defined  
+        --> 
+        <iframe src="http://127.0.0.1:5500/HTML/index11.html" frameborder="1" height="400" width="1000">
+            Sorry! :( <br />
+            Your browser does not supports inline frames. <br />
+        </iframe>
+    </div>
+    
+    <div id="demo3" style="background-color: lightgreen;">
+        <span style="color: darkolivegreen;">Sample 3rd Inline Frame:</span> <br />
+        <div style="height: 120px; width: 290px; border: 2px solid blue; text-align: left; margin: auto; color: blue;">
+        Specifications: <br />
+        [1] Height = 400 <br />
+        [2] Width = 1000 <br />
+        [3] Frameborder: Enabled <br />
+        [4] Scrolling: Disabled <br /> 
+        </div> 
+        <!--
+            DEMO FRAME 3:
+            -------------
+            [1] Height = 400 
+            [2] Width = 1000 
+            [3] Frameborder: Enabled 
+            [4] Scrolling: Disabled  
+        -->
+        <iframe src="https://tailwindcss.com/" frameborder="1" height="400" width="1000" scrolling="no">
+            Sorry! :( <br />
+            Your browser does not supports inline frames. <br />
+        </iframe>
+    </div>
+    
+    <div id="demo4" style="background-color: violet;">
+        <span style="color: darkmagenta;">Sample 4th Inline Frame:</span> <br />
+        <div style="height: 140px; width: 290px; border: 2px solid blue; text-align: left; margin: auto; color: blue;">
+        Specifications: <br />
+        [1] Empty Inline Frame. <br /> 
+        [2] Height = 400 <br />
+        [3] Width = 1000 <br />
+        [4] Frameborder: Disabled <br />
+        [5] Scrolling: Auto <br /> 
+        </div> 
+        <!--
+            DEMO FRAME 4:
+            -------------
+            [1] Height = 400 
+            [2] Width = 1000 
+            [3] Frameborder: Disabled 
+            [4] Scrolling: Auto  
+        -->
+        <iframe frameborder="0" height="400" width="1000" scrolling="auto">
+            Sorry! :( <br />
+            Your browser does not supports inline frames. <br />
+        </iframe>
+    </div>
+    
+    <div id="demo5" style="background-color: #0BEAB1;">
+        <span style="color: #024C39;">Sample 5th Inline Frame:</span> <br />
+        <div style="height: 140px; width: 290px; border: 2px solid blue; text-align: left; margin: auto; color: blue;">
+        Specifications: <br />
+        [1] Empty Inline Frame. <br /> 
+        [2] Height = 400 <br />
+        [3] Width = 1000 <br />
+        [4] Frameborder: Enabled <br />
+        [5] Scrolling: Auto <br /> 
+        </div> 
+        <!--
+            DEMO FRAME 5:
+            -------------
+            [1] Height = 400 
+            [2] Width = 1000 
+            [3] Frameborder: Enabled 
+            [4] Scrolling: Auto 
+        -->
+        <iframe frameborder="1" height="400" width="1000" scrolling="auto">
+            Sorry! :( <br />
+            Your browser does not supports inline frames. <br />
+        </iframe>
+    </div>
+
+</body>
+</html>
