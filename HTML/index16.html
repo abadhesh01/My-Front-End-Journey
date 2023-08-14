@@ -1,0 +1,36 @@
+
+<!--
+    Author: Abadhesh Mishra
+    Email: abadheshmishra01@gmail.com
+    GitHub: https://github.com/abadhesh01
+    GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    CAUTION: Observe the code even with minute details to grasp all the learnings.
+    
+    HINT : -> Nested Frame.
+           -> "index14.html" within an inline frame inside "index15.html". 
+           -> "index15.html" within an inline frame inside this document.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame 2</title>
+</head>
+<body style="background-color: skyblue; font-family: monospace; font-size: x-large;">
+    <div id="heading" style="color: darkblue; text-align: center;">
+          <h1>Frame 2 [Parent of "Frame 1"]</h1>
+    </div>
+    <div id="main" style="text-align: center;">
+        <iframe src="http://127.0.0.1:5500/HTML/index15.html" frameborder="1" height="1000" width="1000" style="border: 2px solid crimson;">
+            Sorry! :(
+            Your browser does not support inline frames.    
+        </iframe>
+    </div>
+</body>
+</html>

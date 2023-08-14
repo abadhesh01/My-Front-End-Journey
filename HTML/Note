@@ -281,5 +281,36 @@
                                              scrolling - Determines whether to provide scrollbars or not.
                                                          The values are "yes", "no" or "auto". [Deprecated]
                                              longdesc - Provides link to another document containing a long description
-                                                        of the contents of the frame. [Deprecated]                                                            
-                                                        
+                                                        of the contents of the frame. [Deprecated]  
+
+   For demo refer to "index13.html".                                                   
+
+-> Hyperlink:
+   Hyperlinks allows visitors to navigate between web sites by clicking on words, 
+   phrases and images.
+   
+   <a> :: ANCHOR TAG: * Represents a hyperlink.
+                      * Content of this element becomes the part of the hyperlink.
+                      * Attributes => href - Specifies the URL of a web page. [Mandatory] 
+                                      target - Specifies the location where the linked web page will be opened.
+                                               "_self" value opens the linked web page in the same frame.
+                                               "_blank" value opens the linked web page in a new window or tab.                                 
+                                               "_parent" value opens the linked web page in the parent frame.
+                                               "_top" value opens the linked web page in the full body of the window.
+                                               An inline frame name can also be provided. 
+                                               [Note: "name" attribute is deprecated in html5.]
+
+   <base> :: BASE TAG: * Provides the base path for all the links in a web page (/ HTML document).  
+                       * Placed within document header.   
+                       * Attribute => href - Specifies the base URL. [Mandatory]    
+                       
+                       
+   Link Colors:
+   The below 3 attributes are used in <body> tag to set the color of any hyperlink.
+   They are - (1) link - Sets the color for the given link.
+              (2) alink - Sets the color for the active link.
+              (3) vlink - Sets the color for the visited link.
+
+
+   For demo refer to "index14.html", "index15.html", "index16.html", "index17.html" and "index18.html".           
+   

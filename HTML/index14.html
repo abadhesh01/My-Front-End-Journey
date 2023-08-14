@@ -1,0 +1,113 @@
+
+<!--
+    Author: Abadhesh Mishra
+    Email: abadheshmishra01@gmail.com
+    GitHub: https://github.com/abadhesh01
+    GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Tag Learned:
+    <a></a> [Attributes: href, target]
+
+    Other Attributes Learned:
+    1. link
+    2. alink
+    3. vlink
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body style="background-color: blanchedalmond; font-family: monospace; font-size: x-large;" alink="#07D4A2" link="black" vlink="#C107D4">
+
+    <div id="heading" style="border: 5px solid crimson; color: crimson; height: 100px; width: 375px; margin: auto;">
+        <h1>Sample Hyperlinks</h1>
+    </div>
+
+    <br /> <br />
+
+    <div id="main" style="border: 5px solid blue; height: 210px; width: 585px; margin: auto;">
+
+        <!-- Hyperlink Examples -->
+
+        <!-- A sample link. -->
+        <a href="http://127.0.0.1:5500/HTML/index12.html">My Sample List.</a>
+        
+        <br />
+
+        <!-- A sample link directed to current frame. -->
+        <a href="http://127.0.0.1:5500/HTML/index12.html" target="_self">
+            My Sample List( in the same frame).
+        </a>
+
+        <br />
+
+        <!-- A sample link directed to new tab / window. -->
+        <a href="http://127.0.0.1:5500/HTML/index12.html" target="_blank">
+            My Sample List( in a new tab).
+        </a>
+
+        <br />
+
+        <!-- A sample link directed to parent frame. -->
+        <a href="http://127.0.0.1:5500/HTML/index12.html" target="_parent">
+            My Sample List( in the parent frame).
+        </a>
+
+        <br />
+
+        <!-- A sample link directed to full body window. -->
+        <a href="http://127.0.0.1:5500/HTML/index12.html" target="_top">
+            My Sample List( in the full body of the window).
+        </a>
+
+        <br />
+
+        <!-- A sample link directed to "Frame A". -->
+        <a href="http://127.0.0.1:5500/HTML/index12.html" target="frame_A">
+            My Sample List( in "Frame A").
+        </a>
+
+        <br />
+
+        <!-- A sample link directed to "Frame B". -->
+        <a href="http://127.0.0.1:5500/HTML/index12.html" target="frame_B">
+            My Sample List( in "Frame B").
+        </a>
+
+        <br />
+
+        <!-- A sample link directed to "Frame A". -->
+        <a href="http://127.0.0.1:5500/HTML/index11.html" target="frame_A">
+            My Sample Tables( in "Frame A").
+        </a>
+
+        <br />
+
+        <!-- A sample link directed to "Frame B". -->
+        <a href="http://127.0.0.1:5500/HTML/index11.html" target="frame_B">
+            My Sample Tables( in "Frame B").
+        </a>
+        
+    </div>
+
+    <br /> <br />
+
+    <div id="frames" style="color: crimson; font-weight: bold; text-align: center;">
+        Frame A: <br>
+        <iframe name="frame_A" frameborder="1" style="border: 5px dotted crimson;" height="400px" width="600px"></iframe>
+
+        <br /> <br />
+
+        Frame B: <br>
+        <iframe name="frame_B" frameborder="1" style="border: 5px dotted crimson;" height="400px" width="600px"></iframe>
+    </div>
+</body>
+</html>

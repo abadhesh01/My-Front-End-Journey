@@ -1,0 +1,53 @@
+
+<!--
+    Author: Abadhesh Mishra
+    Email: abadheshmishra01@gmail.com
+    GitHub: https://github.com/abadhesh01
+    GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+     Things Learned:
+     1. Image Link.
+     2. Linking to a page section.
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.
+   
+    HINT : -> Double Nested Frame.
+           -> "index14.html" within an inline frame inside "index15.html". 
+           -> "index15.html" within an inline frame inside "index16.html".
+           -> "index16.html" within an inline frame inside this document.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Frame</title>
+</head>
+<body style="background-color: pink; font-family: monospace; font-size: x-large;">
+    <div id="heading" style="color: darkblue; text-align: center;">
+          <a id="topPoint"></a> <!-- "topPoint" is the unique reference to this section. -->
+          <h1>Main Frame [Parent of "Frame 2"]</h1>
+    </div>
+    <div id="main" style="text-align: center;">
+        <iframe src="http://127.0.0.1:5500/HTML/index16.html" frameborder="1" height="1200" width="1200" style="border: 2px solid crimson;">
+            Sorry! :(
+            Your browser does not support inline frames.    
+        </iframe>
+
+        <br />
+
+        <!--Image hyperlink for the section with id "topPoint" of the current page. -->
+        <a href="http://127.0.0.1:5500/HTML/index17.html#topPoint">
+            <!--Image enclosed within the hyperlink.-->
+            <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAtOrmYtTMspH8bgyQl_JCb7cCvfx_F3P7Xw&usqp=CAU" 
+            height="100px"
+            width="100px"
+            alt="Go To Top" />
+        </a>
+    </div>
+</body>
+</html>
