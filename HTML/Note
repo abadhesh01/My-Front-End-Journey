@@ -132,7 +132,8 @@
 -> Grouping Content:
    (1) The <div> and <span> elements are used to group together several elements
        to create sections or subsections of a HTML page.
-   (2) <span> is used for grouping of inline elements only such as a part of a 
+   (2) <div> is used for grouping of block-level elements.    
+   (3) <span> is used for grouping of inline elements only such as a part of a 
        sentence or paragraph.  
      
    For demo refer to "index07.html".    
@@ -313,4 +314,83 @@
 
 
    For demo refer to "index14.html", "index15.html", "index16.html", "index17.html" and "index18.html".           
+ 
+-> Form: 
+   "Forms are used to collect some data from the site visitor."
    
+   <form>: FORM TAG: It is used to create a HTML form.
+           Attributes => action - Script to be executed on form submission.
+                         method - Type of method to be used to upload data. (GET | POST) 
+                         target - Specifies the target window / frame where the output of the action 
+                                  will be displayed. Same as "target" attribute of anchor tag.
+                         enctype - Specifies the encoding type of the data to be uploaded on form submission.                  
+                                   "application/x-www-form-urlencoded" is the standard value.
+                                   "multipart/form-data" is the value for uploading binary data like image,
+                                    word file etc.
+           For more; visit: https://www.w3schools.com/tags/tag_form.asp            
+
+   <input>: INPUT TAG: Specifies the type of input / form control(s) which takes user input.    
+            Attributes => type - Specifies the type of the input control. [Mandatory]
+                          name - Specifies the name of the input control. 
+                          value - Specifies the initial value when the page is loaded.
+            Always use <label> tag to define labels for input tag(s).  
+            For more; visit: https://www.w3schools.com/tags/tag_input.asp               
+    
+   Input / Form Controls:
+   Different types of input / form controls are used to collect data from the site visitor.
+   The "type" attribute of <input> tag is used to specify the type of form control.
+   They are -
+   
+   1. Text Input Controls:
+      It is of the following 3 types -
+      1.1. Single-Line Text Input Controls (type="text"): Takes only one line of user text input. 
+                                                          Attributes => size - Specifies the width of the text-input control. 
+                                                                        maxlength - Specifies the maximum number of characters  
+                                                                                    can be entered inside the text-input control.
+      1.2. Password Input Controls (type="password"): A single line text input that masks the characters as soon as the user 
+                                                      enters it.
+                                                      Attributes => size - Specifies the width of the password-input control. 
+                                                                    maxlength - Specifies the maximum number of characters  
+                                                                                can be entered inside the password-input control.
+      1.3. Multi-Line Text Input Controls: Takes multiple lines of text inputs.
+                                           <textarea>: TEXT BOX: Takes multiple lines of user text input.
+                                                       Attributes => name - Specifies the name of the text box.    
+                                                                     rows - Specifies the number of rows of text box.
+                                                                     cols - Specifies the number of columns of text box.  
+   
+   2. Checkboxes Controls (type="checkbox"): Used when multiple option might be selected.
+                                             Attribute => checked - Sets the option as checked by default( if specified). 
+   
+   3. Radio Box Controls (type="radio"): Used when only one out of many options need to be selected. 
+                                         Attribute => checked - Sets the option as selected by default( if specified). 
+   
+   4. Select Box Controls: Provides a drop down box which lists down various options among which one 
+                           or multiple options can be selected.
+                           <select>: SELECT BOX: Provides a drop down list of options.
+                                     Attributes => name - Specifies the name of the select box. 
+                                                   size - Used to present a scrolling list of box.
+                                                   multiple - Allows to select multiple items from menu( if specified).
+                           <option>: Specifies the option(s) of a select box.
+                                     Attributes => value - Specifies the value to be used if the option was selected.                        
+                                                   selected - Specifies the value to be initially selected by default
+                                                              when the page is loaded.       
+                                                   label - Alternative way of labeling options.               
+   
+   5. File Upload Boxes (type="file"): Used to upload a file as an input.
+                                       Other attribute => accept - Specifies the type of file, that can be uploaded.
+                                                          To know the possible values of this attribute, visit: 
+                                                          https://www.w3schools.com/tags/att_input_accept.asp
+
+   6. Hidden Controls (type="hidden"): Used to hide the form / input control inside the page. 
+   
+   7. Button Controls (type="submit|image|button|reset"): Used to create different types of clickable buttons.  
+                                                          They are - 
+                                                          7.1. submit - Provides a button that automatically submits a form
+                                                                        when clicked .
+                                                          7.2. reset - Provides a button that automatically resets the input 
+                                                                       / form controls to their default values when clicked.  
+                                                          7.3. button - Provides a button that triggers a client-side script 
+                                                                        when clicked.
+                                                          7.4. image - Provides an image as a clickable button.
+                                                                       The source of the image is provided in "src" attribute.              
+    
