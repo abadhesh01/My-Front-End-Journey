@@ -1,0 +1,73 @@
+
+<!--
+    Author: Abadhesh Mishra
+    Email: abadheshmishra01@gmail.com
+    GitHub: https://github.com/abadhesh01
+    GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Tag Learned: 
+    <object> [Attributes: data, type, typemustmatch, height, width]
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <style type="text/css">
+       body{
+         background-color: cornflowerblue;
+       }
+
+       object {
+         border: 5px solid greenyellow;
+         margin-left: 15%;
+         margin-right: auto;
+         margin-top: auto;
+         margin-bottom: 5%;
+       }
+       
+       h1 {
+          color: pink;
+          font-family: monospace;
+          font-size: xx-large;
+          font-weight: bolder;
+          margin: 5%;
+          text-align: center;
+       }
+       
+       h4 {
+          color: greenyellow;
+          font-family: monospace;
+          font-size: x-large;
+          font-weight: bold;
+          text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Sample HTML Objects</h1>
+    </div>
+    <div id="main">
+       
+        <h4>Sample PDF Object</h4>
+       <!-- Embedding a sample pdf file. -->
+       <object data="CycleAndCycling.pdf" type="application/pdf" typemustmatch height="600" width="1000"></object>
+       
+       <h4>Sample Video Object</h4>
+       <!-- Embedding a sample video file. -->
+       <object data="SampleVideo.mp4" type="video/mp4" typemustmatch height="600" width="1000"></object>
+       
+       <h4>Sample Audio Object</h4>
+       <!-- Embedding a sample audio file. -->
+       <object data="SampleAudio.mp3" type="audio/mp3" typemustmatch height="600" width="1000"></object>
+
+    </div>    
+</body>
+</html>
