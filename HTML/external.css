@@ -1,0 +1,9 @@
+ 
+ body {
+    background-color: darkblue;
+    color: yellow;
+    font-family: monospace;
+    position: absolute;
+    top: 10%;
+    left: 38%;
+ }

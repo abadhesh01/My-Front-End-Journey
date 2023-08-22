@@ -1,0 +1,88 @@
+
+<!--
+    Author: Abadhesh Mishra
+    Email: abadheshmishra01@gmail.com
+    GitHub: https://github.com/abadhesh01
+    GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Tags Learned: 
+    1. <title></title>
+    2. <style></style>
+    3. <link>
+    4. <script></script>     
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        # Setting up the title of the page.
+    -->
+    <title>Header Elements</title>
+    <!--
+        # Applying embedded CSS to the current page.
+        # Styling all the <div> elements, <h1> element and buttons with id  
+          "button01" and "button02" through CSS rules.
+    -->
+    <style type="text/css">
+        div{
+            border: 5px solid #0EF5BD;
+            height: auto;
+            width: 100%;
+            margin: 1%;
+            padding: 0.5%
+        }
+        h1{
+            margin: 1%;
+        }
+        #button01, #button02{
+            background-color: greenyellow;
+            color: crimson;
+            font-size: x-large;
+            font-weight: bold; 
+            padding: 3%;
+            margin: 1%; 
+            width: 98%;
+        } 
+    </style>
+    <!--
+        # Applying external CSS to the current page by linking "external.css" file.
+        # "external.css" file contains CSS rules for styling of <body> element of a webpage.
+    -->
+    <link rel="stylesheet" type="text/css" href="external.css">
+    <!--
+        # Embedding JavaScript code to the current page.
+    -->
+    <script type="text/javascript">
+        function embeddedMethod() {
+                 alert('Sample message from embedded JavaScript code.');
+        }
+    </script>
+    <!--
+        # Linking JavaScript code present in another JavaScript(".js") file
+          named as "external.js" to the current page.
+    -->
+    <script src="external.js"></script>
+</head>
+<body>
+    <div id="heading">
+          <h1>Header Elements Demo</h1>
+    </div>
+    <div id="main">
+        <!--
+            # Clicking the button with id "button01" will execute embedded JavaScript code.
+            # Clicking the button with id "button02" will execute JavaScript code present in 
+              "external.js" file.
+        -->
+        <input type="button"  id="button01" value="Run Embedded Script" onclick="embeddedMethod()"> 
+        <br /> 
+        <input type="button"  id="button02" value="Run External Script" onclick="externalMethod()">
+    </div>
+</body>
+</html>
