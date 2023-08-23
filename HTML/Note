@@ -402,4 +402,149 @@
                                                                         when clicked.
                                                           7.4. image - Provides an image as a clickable button.
                                                                        The source of the image is provided in "src" attribute.              
+
+For demo refer to "index19.html" file.                                                                       
+
+-> Header:
+   The header of the web page is represented by <head> tag.
+   It contains the following tags: 
+   <title>: TITLE TAG: Specifies the title of the web page.
+   <meta>: META TAG: * Provides the metadata about the web page such as page expiry, page author, list of keywords and
+                       page description etc.      
+                     * For more: https://www.w3schools.com/tags/tag_meta.asp
+   <base>: BASE TAG: * Provides the base path for all the links in a web page (/ HTML document).     
+                     * Attribute => href - Specifies the base URL. [Mandatory]                                                                                             
+   <link>: LINK TAG: * Specifies the relationship between the current document and external resources.
+                     * For more: https://www.w3schools.com/tags/tag_link.asp
+   <style type="text/css"></style>: STYLE TAG: * Specifies stylesheet for current HTML document.
+                                               * For more: https://www.w3schools.com/tags/tag_style.asp  
+   <script type="text/javascript"></script>: SCRIPT TAG: * Embeds client-side script(JavaScript) within current HTML document.  
+                                                         * Either contains JavaScript code or points to an external
+                                                           JavaScript(".js") file through "src" attribute. 
+                                                         * For more: https://www.w3schools.com/tags/tag_script.asp   
+
+   For demo refer to "external.css", "external.js" and "index20.html".      
+  
+-> Embedding Object:
+   An object can be any external resources such as a web page, a picture, a media player, or a plug-in application.
+   
+   <object>: OBJECT TAG: * Represents an external resource.
+                         * Attributes: data - Specifies the path to a valid object. [Mandatory]
+                                       type - Specifies the object type.
+                                       typemustmatch - Ensures the object and the type of the object must match.
+                                       height - Specifies the height of the object in terms of pixels.
+                                       width - Specifies the width of the object in terms of pixels.
+                         * For more: https://www.w3schools.com/tags/tag_object.asp              
+
+   For demo refer to "index21.html" file.
+   
+-> Embedding Video and Audio:
+   <video>: VIDEO TAG: * Used to embed a video content in the web page.
+                       * Attribute: => height - Specifies the height of the video player in terms of pixels.
+                                       width - Specifies the width of the video player in terms of pixels.
+                                       poster - Specifies the valid path to the image to be shown until the video
+                                                is downloading or user hits the play button.                                         
+   <audio>: AUDIO TAG: Used to embed a audio / sound content in the web page.   
+
+   Common attributes for <video> and <audio> tags:
+   -----------------------------------------------   
+   src - Specifies the valid path to a video / audio content. [mandatory]
+   autoplay - Plays the video / audio as soon as it is ready when the page is loaded.
+   control - Provides video / audio controls such as: 
+             1. Play
+             2. Pause
+             3. Seeking
+             4. Volume
+             5. Fullscreen toggle [For video only.]
+             6. Captions/Subtitles [For video only when available.]
+             7. Track [For video only when available.]
+   loop - Starts over the video / audio again after every time it is finished.
+   muted - Specifies the audio output of the video / audio will be muted.
+
+   For more about video: https://www.w3schools.com/tags/tag_video.asp
+   For more about audio: https://www.w3schools.com/tags/tag_audio.asp
+   
+   For demo refer to "index22.html", "index23.html" and "index24.html".
+
+-> Semantic Elements:
+   * Definition:: "Element with a meaning( i.e. same for both browser and developer)."
+   * Non-semantic elements(<div> and <span>) tells nothing about their contents.
+   * Semantic elements(<form>, <table>, <article>, ....) define their contents.
+
+   * List of semantic elements::
+     ---------------------------
+     <article>:  Specifies independent, self-contained content( such as forum post, blog post
+                 and news story etc). 
+     <aside>: Specifies content aside from the page content.
+     <details>: Specifies additional details that a user can view or hide.   
+                Attribute => open - Specifies the details should be visible / open to the user by default.
+     <figure>: Specifies self-contained content like illustrations, diagrams, photos, 
+               code listings etc. 
+     <figcaption>: Specifies a caption for a <figure> element. 
+     <footer>: * Specifies a footer for a document or section.
+               * It typically contains -
+                 # Authorship
+                 # Copyright Information
+                 # Contact Information
+                 # Sitemap
+                 # Back To Top Links
+                 # Related Documents
+     <header>: * Specifies a header for a document or section.
+               * It is like a container for introductory content or a set of navigational links.  
+               * It typically contains -
+                 # One or more heading elements(<h1> to <h6>)
+                 # Logo / Icon
+                 # Authorship Information       
+     <main>: Specifies the main content of a document.
+     <mark>: Specifies a marked / highlighted text.
+     <nav>: Specifies a set of navigation links.
+     <section>: Specifies a section in a document.
+     <summary>: Specifies a visible heading for a <details> element.
+     <time>: Specifies a date / time / datetime.
+             For more: https://www.w3schools.com/tags/tag_time.asp
+      
+   * Additional & Essential Notes:
+     -----------------------------
+     [1] <article> and <aside> elements do not render as anything special in a browser.       
+     [2] There can be multiple <header> elements in a web page.
+     [3] A <header> element cannot be placed within a <footer>, <address> or another <header> elements.  
+     [4] Multiple <main> elements must not be there in a web page.
+     [5] The <main> element must not be the descendant of an <article>, <aside>, <footer>, <header> or
+         <nav> elements.  
+     [6] <nav> element is intended only for major blocks of navigational links, not for all links.       
+     [7] <summary> element should be the first child of the <details> element. 
+     [8] <article> elements can be used within <section> elements.
+     [9] <section> elements can be used within <article> elements. 
+     [10] <article> elements can be used within <article> elements.
+     [11] <section> elements can be used within <section> elements.
+
+   * Tips:
+     -----
+     [1] <aside> element is often placed as a sidebar in a document. 
+     [2] <summary> element is used in conjunction with <details> element to specify a visible heading for 
+         the details. 
+     [3] Contact information inside a <footer> element should go inside an <address> element.
+
+   * Some Benefits of Sematic Elements:
+     ----------------------------------
+     [1] Accessibility 
+     [2] Searchability 
+     [3] Styling 
+     [4] Collaboration 
+     [5] Overall User Experience   
+
+   * For more about HTML Semantic tags, visit:
+     https://www.w3schools.com/html/html5_semantic_elements.asp   
+   
+   * For demo, refer to "index25.html" file. 
+
+-> References:   
+   HTML Element Reference:: https://www.w3schools.com/TAGS/default.asp
+   IANA Media Types:: https://www.iana.org/assignments/media-types/media-types.xhtml
+
+-> Author Info:
+   * Author: Abadhesh Mishra
+   * Email: abadheshmishra01@gmail.com
+   * GitHub: https://github.com/abadhesh01
+   * GitLab: https://gitlab.com/abadhesh01
     
