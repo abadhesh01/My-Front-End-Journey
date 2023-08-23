@@ -110,7 +110,7 @@
    For demo refer to "index04.html".
 
 -> Internationalization Attributes:
-   There are 3 internationalization attribute available for most of the XHTML elements.
+   There are 3 internationalization attributes available for most of the XHTML elements.
    
    They are -
    1. dir :: Defines the direction in which the text should flow.
@@ -205,7 +205,7 @@
    Tables allow us to arrange data like text, images, links and other tables etc. into rows and columns 
    of cell.
       
-   <table> :: TABLE: Represents a entire table.
+   <table> :: TABLE: Represents an entire table.
               Attributes => border - Sets table border with provided thickness.
                                      "0" thickness means no border.
                             cellpadding - Represents the distance between cell borders and content
@@ -296,7 +296,7 @@
    For demo refer to "index13.html".                                                   
 
 -> Hyperlink:
-   Hyperlinks allows visitors to navigate between web sites by clicking on words, 
+   Hyperlinks allow visitors to navigate between web sites by clicking on words, 
    phrases and images.
    
    <a> :: ANCHOR TAG: * Represents a hyperlink.
@@ -546,5 +546,8 @@ For demo refer to "index19.html" file.
    * Author: Abadhesh Mishra
    * Email: abadheshmishra01@gmail.com
    * GitHub: https://github.com/abadhesh01
-   * GitLab: https://gitlab.com/abadhesh01
+   * GitLab: https://gitlab.com/abadhesh01 
+   
+Checking completed by author on 23rd August 2023 at 2106 HRS.
+Happy Learning :)
     
