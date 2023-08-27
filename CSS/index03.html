@@ -1,0 +1,149 @@
+
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Lesson Learned:
+    ---------------
+    [1] CSS Pseudo-Class Selector(:) - :hover
+    [2] CSS Pseudo-Element Selectors(::) - ::first-letter, ::first-line 
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Class And Pseudo-Element Selectors</title>
+    <style type="text/css">
+
+        /* Styling the body. */
+        body {
+            background-color: burlywood; 
+            font-family: monospace;
+            font-size: large;
+        }
+
+        /* Styling the heading. */
+        h1 {
+            color: crimson;
+            text-align: center;
+        }
+
+        /* Styling the "section" elements. */
+        #section01 {
+            background-color: red; 
+            border: 3px solid blue; 
+            color: pink; 
+            height: 50%;
+            margin-left: 25%; 
+            width: 50%;
+        }
+
+        #section02 {
+            background-color: blueviolet;
+            border: 3px solid darkblue; 
+            color: skyblue; 
+            height: 500%;
+            margin-top: 5%;
+            margin-left: 25%;
+            text-align: center; 
+            width: 50%;
+        }
+
+         /* Styling the 2nd "div" element with id "div02". */
+        #div02{
+            display: none;
+            background-color: violet;
+            color: crimson;
+            text-align: left;
+        }
+
+        /*
+           Pseudo-Class Selector (:)
+           --------------------------
+           :hover 
+        */
+        #section01:hover {
+            background-color: green;  
+            color: yellow;
+            display: block;
+        }
+
+        #section02:hover #div02 {
+            display: block;
+        }
+
+        /*
+           Pseudo-Element Selectors (::)
+           ------------------------------
+           ::first-letter
+           ::first-line
+        */
+        #section01::first-line {
+            color: greenyellow;
+        }
+
+        #section01::first-letter {
+            color: blue;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
+        #div01::first-line {
+            color: greenyellow;
+        }
+
+        #div01::first-letter {
+            color: blue;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>CSS Pseudo-Class And Pseudo-Element Selectors</h1>
+
+    <section id="section01">
+      <p>
+        This is the 1st sample paragraph. <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eligendi iusto fugit quis amet. Placeat! <br />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, mollitia? <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt earum beatae exercitationem! <br/>
+        Lorem ipsum dolor sit amet consectetur adipisicing. <br>
+      </p>
+      <div id="div01">
+         <p>
+            This is the 2nd sample paragraph. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, consequatur. <br />
+            Lorem ipsum dolor sit amet. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing. <br />
+            Lorem, ipsum dolor. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae! <br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam numquam vero iusto enim. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing. <br />
+         </p>
+      </div> 
+    </section>
+
+    <section id="section02">
+        Mouse Over Me
+        <div id="div02">
+            <p>
+                This is the sample hidden para. <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+                Molestias ipsum impedit dolorum harum soluta quaerat corporis perspiciatis. <br /> 
+            </p> 
+         </div>
+    </section>
+
+</body>
+</html>

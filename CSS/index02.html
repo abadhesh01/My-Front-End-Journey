@@ -1,0 +1,105 @@
+
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+   Lesson Learned:
+   ---------------
+   CSS Combinator Selectors => [1] Descendant Selector (space)
+                               [2] Child Selector (>)
+                               [3] Adjacent Sibling Selector (+)
+                               [4] General Sibling Selector (~)
+
+   CAUTION: Observe the code even with minute details to grasp all the learnings.                            
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Combinator Selectors</title>
+  <style type="text/css">
+  
+   /*
+      Descendant Selector (space) [Element "p" is the descendant of element "section".]
+   */
+   section p {
+    background-color: red;
+    color: pink;
+    font-size: x-large;
+    font-weight: bold;
+   }
+ 
+   /*
+      Child Selector (>) [Element "p" is the child of element "section".]
+   */
+   section > p {
+    font-family: fantasy;
+   }
+   
+   /*
+      Adjacent Sibling Selector (+) [Element "p" is the adjacent sibling of element "section".]
+   */
+   section + p {
+    font-family: monospace;
+   }
+
+   /*
+      General Sibling Selector (~) [Element "p" is the sibling of element "section".]
+   */    
+   section ~ p {
+    background-color: blue; 
+    color: aqua;
+    font-size: 150%;
+    font-weight: bold;
+   } 
+   
+  </style>
+</head>
+<body style="background-color: burlywood; text-align: center;">
+
+    <h1 style="color: crimson;">CSS Combinator Selectors Demo</h1>
+  
+    <section> 
+      <!--Descendant and child of "section" element.-->
+      <p>Here element "p" is the 1st descendant and 1st child of element "section".</p>  
+       
+      <!--Descendant and child of "section" element.-->
+      <p>Here element "p" is the 2nd descendant and 2nd child of element "section".</p>
+       
+      <!--Descendant and child of "section" element.-->
+      <p>Here element "p" is the 3rd descendant and 3rd child of element "section".</p>
+       
+      <!--Descendant and child of "section" element.-->
+      <div>
+        <!--Descendant of both "div" and "section" elements but, child of "div" element only.-->
+        <p>
+           Here element "p" is the 4th descendant of element "section" but, not a child of section.
+           <br /> It is because it is contained within the element "div" and here element "div" is the
+           <br /> child of element "section".           
+        </p>    
+      </div>
+
+      <!--Descendant and child of "section" element.-->
+      <p>Here element "p" is the 5th descendant and 4th child of element "section".</p>
+    </section>
+
+    <!--Adjacent sibling of "section" element.-->
+    <p>
+      Here element "p" is the 1st sibling of element "section". <br />
+      Here element "p" is also the adjacent sibling of element "section".
+    </p>
+
+    <!--Sibling of "section" element.-->
+    <p>Here element "p" is the 2nd sibling of element "section".</p>
+
+    <!--Sibling of "section" element.-->
+    <p>Here element "p" is the 3rd sibling of element "section".</p>
+
+</body>
+</html>

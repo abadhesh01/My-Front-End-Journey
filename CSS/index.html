@@ -1,0 +1,103 @@
+
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Lesson Learned:
+    ---------------
+    CSS Simple Selectors => [1] Universal Selector (*)
+                            [2] Id Selector (#id_value)
+                            [3] Class Selector (.class_name) 
+                            [4] Element Selector
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.                        
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Simple Selectors</title>
+    <style type="text/css">
+       
+        /* 
+          Universal Selector (*) 
+        */
+
+        *{
+           background-color: burlywood;
+           text-align: center;
+        }
+
+        /*
+           ID Selector (#id_value)
+        */
+
+        #alpha{ 
+           color: red;
+           
+        }
+        
+        #bravo{
+            color: green;
+        }
+         
+        #charlie{
+            color: blue;
+        }
+
+        /*
+           Class Selector (.class_name)
+        */
+
+        .alpha {
+            font-family: monospace;
+            font-weight: bolder;
+        }
+
+        .bravo {
+            font-family: cursive;
+            font-weight: bolder;
+        }
+
+        .charlie {
+             font-family: fantasy;
+        }
+
+        /*
+           Element Selector
+        */
+        
+        h1{
+            color: darkmagenta;
+        }
+
+        div{
+            font-size: xx-large;
+        }
+  
+    </style>
+</head>
+<body>
+
+    <h1>CSS Simple Selectors Demo</h1>
+    
+    <div id="alpha" class="alpha">
+        <p>Sample text from "alpha".</p>
+    </div>
+
+    <div id="bravo" class="bravo">
+        <p>Sample text from "bravo".</p>
+    </div>
+
+    <div id="charlie" class="charlie">
+        <p>Sample text from "charlie".</p> 
+    </div>
+
+</body>
+</html>
