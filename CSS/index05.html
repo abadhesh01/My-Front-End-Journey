@@ -1,0 +1,62 @@
+
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Lesson Learned:
+    ---------------
+    Possible ways of applying CSS to a HTML file.
+    They are -
+    [1] External CSS (Using a ".css" file and "<link>" tag.)
+    [2] Internal CSS (Using "<style>" tag.)
+    [3] Inline CSS (Using "style" attribute of a HTML element.)    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Ways of Styling HTML</title>
+    <!--Linking external CSS(style.css) file using HTML <link> tag.-->
+    <link rel="stylesheet" href="style.css"> 
+    <!--Embedding internal CSS using <style> tag.-->
+    <style type="text/css">
+        /* 
+          Sample Internal CSS
+          -------------------
+        */
+
+        body {
+            background-color: aquamarine;
+            color: green; /* "color" property suppressed by inline CSS. */
+        }
+
+        p:hover {
+            background-color: yellow;
+            border: 3px solid green;
+        }
+    </style>   
+</head>      
+<!--Sample Inline CSS--> 
+<body style="color: blue; font-family: monospace; font-weight: bold;">
+
+    <h1>Different Ways of Styling HTML</h1>
+    
+      <p>
+        [1] This is a sample para. <br />
+        [2] Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, laborum. <br />
+        [3] Lorem ipsum dolor sit amet. <br />
+        [4] Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, itaque cupiditate. <br />
+        [5] Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Tempora libero vel dolorum dolores fuga, laboriosam eligendi architecto? <br />
+        [6] Lorem ipsum dolor sit amet consectetur. <br />
+        [7] Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati! <br />
+      </p>
+
+</body>
+</html>

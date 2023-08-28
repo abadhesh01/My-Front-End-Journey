@@ -1,0 +1,26 @@
+
+ /* 
+    Sample External CSS
+    --------------------
+ */
+
+body {
+    /* All properties suppressed by internal CSS. */
+    background-color: burlywood; 
+    color: red;
+}
+
+h1 {
+   color: deeppink;
+   margin-top: 5%; 
+   text-align: center; 
+}
+
+p {
+    background-color: pink;
+    border: 3px solid red;
+    font-size: 130%;
+    margin-left: 5.5%;
+    margin-top: 5%;
+    width: fit-content;
+}

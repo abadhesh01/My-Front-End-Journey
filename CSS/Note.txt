@@ -182,7 +182,7 @@
                    [4.4] For more details, visit:
                           https://www.w3schools.com/css/css_pseudo_elements.asp                                            
 
-                   [4.5] For demo, refer to "index04.html" file.
+                   [4.5] For demo, refer to "index03.html" file.
 
 
                [5] Attribute Selectors =>
@@ -200,7 +200,7 @@
                                                          
                           [5.2.5] [attribute|="value"] - Select all elements with the specified attribute, whose value can be 
                                                          exactly the specified value, or starts with the specified value followed 
-                                                         by a hyphen (-).
+                                                         by a hyphen (-) which again may or may not be followed by any text.
                           
                           [5.2.6] [attribute^="value"] - Select all elements with the specified attribute, whose value starts with 
                                                          the specified value.
@@ -213,6 +213,46 @@
                     [5.3] For more, visit:
                           https://www.w3schools.com/css/css_attribute_selectors.asp
 
-                    [5.4] For demo, refer to "index05.html" file.      
+                    [5.4] For demo, refer to "index04.html" file.      
+
+-> Inserting CSS:
+   * There are the following 3 ways of styling a HTML page::
+     [1] External CSS => 
+         # The HTML page includes a reference to the external style sheet file inside the <link> element, inside the head section.
+         # The style sheet file name ends with a ".css" extension which contains the CSS rules.
+         # Benefit - Code Reusability.
+     [2] Internal CSS =>
+         # The internal style is defined inside the <style> element, inside the head section.
+         # Benefit - Used for styling a single HTML page having an unique style. 
+     [3] Inline CSS => 
+         # The inline style is defined inside the "style" attribute of a HTML element.
+         # Benefit - Used to apply a unique style for a single HTML element.
+
+   * If some properties have been defined for the same selector(element) in different style sheets, the value from the last read 
+     style sheet will be used. 
+
+   * Cascading order of inserting CSS from highest to lowest priority:
+     [1] Inline Style (Highest Priority)
+     [2] External and Internal Style Sheets
+     [3] Browser Default (Lowest Priority)
+
+   * For demo, refer to "index05.html" file.     
+
+-> Comments:
+   [1] Comments are used for documenting source codes.
+   [2] Comments are ignored by the web browsers.
+   [3] Syntax for single line comment =>
+
+       /* Sample single line comment. */
+
+   [4] Syntax for multi line comment => 
+    
+      /* 
+        Sample 
+          multi line
+           comment. 
+       */
+   [5] For demo, refer to "index06.html" file.   
+      
 
 

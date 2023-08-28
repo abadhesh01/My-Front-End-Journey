@@ -1,0 +1,141 @@
+
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Lesson-Learned:
+    ---------------
+    Attribute Selectors: [1] ~ {Select if the provided value is present within a set of space separated attribute value(s).}
+                         
+                         [2] | {Select if the attribute value starts with the provided value or provided value
+                                followed by a hyphen(-) which again may or may not be followed by any text.}
+                         
+                         [3] ^ {Select if the attribute value starts with the provided value.} 
+                         
+                         [4] $ {Select if the attribute value ends with the provided value.}
+                         
+                         [5] * {Select if the provided value is a substring of the attribute value.}
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selectors</title>
+    <style type="text/css">
+      
+      /* Styling the "body" element of the page. */
+      body {
+        background-color: burlywood;
+        color: blue;
+      }
+
+      /* Styling the "h1" element of the page. */
+      h1 {
+        color: crimson;
+        text-align: center;
+      } 
+
+      /* Styling the "p" element of the page. */
+      p {
+        font-size: x-large;
+        border: 3px solid blue;
+        margin-left: 17%;
+        width: 65%;
+      }
+
+      /* Styling the element(s) with attribute "title". */
+      [title]:hover {
+        background-color: rgb(78, 173, 194);
+      }
+
+      /* Styling the element(s) with attribute "title" where attribute value is "alpha". */
+      [title="alpha"] {
+        text-decoration: underline wavy;
+        text-decoration-color: skyblue;
+      }
+
+      /* 
+       * Styling the element(s) with attribute "title" with space separated values among 
+       * which one value is "bravo". 
+       */
+      [title~="bravo"]::first-letter {
+        color: darkmagenta;
+        font-size: xx-large;
+        font-weight: bolder;
+      }
+
+      /* 
+       * Styling the element(s) with attribute "title" where attribute value is either 
+       * "alpha" or "alpha-" or "alpha-" followed by any text.
+       */
+      [title|="alpha"] {
+        font-family: cursive; 
+      }
+
+      /*
+       * Styling the element(s) with attribute "title" where attribute value starts with the 
+       * the text "alpha".
+       */
+      [title^="alpha"] {
+        background-color: chocolate;
+      }
+
+      /*
+       * Styling the element(s) with attribute "title" where attribute value ends with the 
+       * the text "delta".
+       */
+      [title$="delta"] {
+        color: greenyellow;
+      }
+
+      /*
+       * Styling the element(s) with attribute "title" where attribute value contains the 
+       * text "charlie".
+       */
+      [title*="charlie"]::first-line {
+         color: whitesmoke;
+         font-weight: bolder; 
+      }
+ 
+    </style>
+</head>
+<body>
+
+    <h1>CSS Attribute Selectors</h1>
+
+    <p title="alpha">
+        Sample 1st paragraph. <br />
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quaerat. <br /> 
+        Lorem, ipsum dolor. <br />
+        Lorem ipsum dolor, sit amet consectetur adipisicing. <br />
+    </p>
+    
+    <p title="alpha bravo charlie delta">
+        Sample 2nd paragraph. <br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing. <br />
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga laborum sunt odit quisquam. <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam? <br />
+    </p>
+
+    <p title="alpha-bravo-charlie-delta">
+        Sample 3rd paragraph. <br />
+        Lorem ipsum dolor sit amet. <br />
+        Lorem ipsum dolor sit amet, consectetur adipisicing. <br />
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias! <br />
+    </p>
+
+    <p title="alphabravocharliedelta">
+        Sample 4th paragraph. <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga. <br />
+        Lorem ipsum dolor sit amet, consectetur adipisicing. <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+    </p>
+
+</body>
+</html>
