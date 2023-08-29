@@ -253,6 +253,83 @@
            comment. 
        */
    [5] For demo, refer to "index06.html" file.   
-      
+
+-> Colors:
+   * Colors can be specified in the following 2 ways =>
+     [1] Color Names::
+         Example - red, green, blue, white, black, lightgrey, grey, tomato, 
+                   orange, dodgerblue, mediumseagreen, slateblue and violet etc.
+   
+     [2] Color Values::
+         It can be represented in terms of - 
+         [2.1] RGB Values 
+         [2.2] RGBA Values
+         [2.3] HEX Values
+         [2.4] HSL Values
+         [2.5] HSLA Values
+
+   * RGB (RED GREEN BLUE)::
+     ----------------------
+     [1] Formula: rgb(RED, GREEN, BLUE)      
+     [2] RED - Intensity of red color.
+     [3] GREEN - Intensity of green color.
+     [4] BLUE - Intensity of blue color.
+     [5] The intensity of the colors can be specified between 0(lowest) to 255(highest).  
+     [6] "rgb(0, 0, 0)" represents black color. 
+     [7] "rgb(255, 255, 255)" represents white color.
+     [8] Shades of gray are often defined using equal values for RED, GREEN and BLUE colors.
+
+   * RGBA (RED GREEN BLUE ALPHA)::
+     -----------------------------
+     [1] Formula: rgba(RED, GREEN, BLUE, ALPHA)
+     [2] RGBA is the extension of RGB.
+     [3] It has just one additional parameter called as "ALPHA".
+     [4] ALPHA represents the opacity / transparency of a color.
+     [5] The value of ALPHA can be specified between 0.0 (fully transparent) and 1.0 (not transparent at all).
+  
+   * HEX (HEXADECIMAL)::
+     --------------------   
+     [1] Formula: #RRGGBB
+     [2] R - Intensity of red color.
+     [3] G - Intensity of green color.
+     [4] B - Intensity of blue color.
+     [5] The intensity of the colors can be specified between [0(lowest) to 9] and [A/a to F/f(highest)].
+     [6] "#000000" represents black color. 
+     [7] "#ffffff" represents white color.
+     [8] Shades of gray are often defined using equal values for "R", "G" and "B" colors.
+     [9] The formula "#RRGGBB" can be represented as "#RGB" only if both the values (RR, GG, and BB) 
+         are the same for each component.  
+
+   * HSL (HUE SATURATION LIGHTNESS)::
+     --------------------------------
+     [1] Formula: hsl(HUE, SATURATION, LIGHTNESS)
+     [2] HUE - * Specifies the degree of color on the color wheel.
+               * It can be specified between 0 to 360.
+               * 0 is red color, 120 is green color and 240 is blue color.
+     [3] SATURATION - * Specifies the intensity of color (or shade of grey).
+                      * It is specified in terms of percentage(%) between 
+                        0%(pure grey / no color) to 100%(no grey / pure color).
+     [4] LIGHTNESS -  * Specifies the intensity of light.                    
+                      * It is specified in terms of percentage(%) 
+                        between 0%(no light / black) to 100%(full light / white).
+                      * 50% of lightness is idle as it is neither dark nor light.  
+
+   * HSLA (HUE SATURATION LIGHTNESS ALPHA)::
+     ---------------------------------------
+     [1] Formula: hsla(HUE, SATURATION, LIGHTNESS, ALPHA)
+     [2] HSLA is the extension of HSL.
+     [3] It has just one additional parameter called as "ALPHA".
+     [4] ALPHA represents the opacity / transparency of a color.
+     [5] The value of ALPHA can be specified between 0.0 (fully transparent) and 1.0 (not transparent at all).
+
+   * HTML and CSS supports 140 standard colors. 
+     Click the link below to see them.
+     https://www.w3schools.com/colors/colors_names.asp
+
+   * For HTML Color Codes, visit:
+     https://htmlcolorcodes.com/
+
+   * For demo, refer to "index07.html" and "index08.html" files.  
+
 
 

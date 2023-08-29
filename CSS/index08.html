@@ -1,0 +1,138 @@
+
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Observation: Effects on color due to the variation of saturation and lightness:
+                 [1] Saturation dominates color.
+                 [2] Lightness dominates both color and saturation.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS HSL(A) Observation</title>
+    <style type="text/css">
+
+        * {
+            background-color: burlywood;
+            color: crimson;
+            font-family: cursive;
+        } 
+
+        h1, h3 {
+            text-align: center;
+            background-color: white;
+        }
+
+        section {
+            background-image: 
+            url(https://cdn.vectorstock.com/i/preview-1x/59/07/black-and-white-geometric-pattern-vector-3645907.jpg);
+            border: 5px solid black;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            padding: 1%;
+        }
+
+        div {
+            border: 3px solid black;
+            font-size: large;
+            font-weight: bolder;
+            height: 100%;
+            margin-top: 1%;
+            margin-left: 22%;
+            padding: 2%;
+            text-align: center;
+            width: 50%;
+        }
+
+        [style^="background-color: hsl"] {
+            color: pink;
+        }
+
+        
+        [style^="background-color: hsla"] {
+            color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>CSS HSL(A) Observation</h1>
+
+    <section>
+        <h3>HSL Observation</h3>
+
+        <div style="background-color: hsl(240, 100%, 50%);">
+            hsl(240, 100%, 50%) 
+            <br> Blue color with 100% saturation and 50% lightness. 
+        </div>
+        
+        <div style="background-color: hsl(240, 0%, 50%);">
+            hsl(240, 0%, 50%)
+            <br> Blue color with 0% saturation and 50% lightness.
+        </div>
+        
+        <div style="background-color: hsl(240, 100%, 0%);">
+            hsl(240, 100%, 0%)
+            <br> Blue color with 100% saturation and 0% lightness.
+        </div>
+        
+        <div style="background-color: hsl(240, 100%, 100%);">
+            hsl(240, 100%, 100%)
+            <br> Blue color with 100% saturation and 100% lightness.
+        </div>
+        
+        <div style="background-color: hsl(240, 0%, 0%);">
+            hsl(240, 0%, 0%)
+            <br> Blue color with 0% saturation and 0% lightness.
+        </div>
+        
+        <div style="background-color: hsl(240, 0%, 100%);">
+            hsl(240, 0%, 100%)
+            <br> Blue color with 0% saturation and 100% lightness.  
+        </div>
+    </section>
+
+    <section>
+        <h3>HSLA Observation</h3>
+
+        <div style="background-color: hsla(240, 100%, 50%, 0.7);">
+            hsla(240, 100%, 50%, 0.7)
+            <br> Blue color with 100% saturation and 50% lightness.
+        </div>
+
+        <div style="background-color: hsla(240, 0%, 50%, 0.7);">
+            hsla(240, 0%, 50%, 0.7)
+            <br> Blue color with 0% saturation and 50% lightness.
+        </div>
+
+        <div style="background-color: hsla(240, 100%, 0%, 0.7);">
+            hsla(240, 100%, 0%, 0.7)
+            <br> Blue color with 100% saturation and 0% lightness.
+        </div>
+
+        <div style="background-color: hsla(240, 100%, 100%, 0.7);">
+            hsla(240, 100%, 100%, 0.7)
+            <br> Blue color with 100% saturation and 100% lightness.
+        </div>
+
+        <div style="background-color: hsla(240, 0%, 0%, 0.7);">
+            hsla(240, 0%, 0%, 0.7)
+            <br> Blue color with 0% saturation and 0% lightness.
+        </div>
+
+        <div style="background-color: hsla(240, 0%, 100%, 0.7);">
+            hsla(240, 0%, 100%, 0.7)
+            <br> Blue color with 0% saturation and 100% lightness.
+        </div>
+    </section>
+
+</body>
+</html>
