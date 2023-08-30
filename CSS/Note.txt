@@ -255,11 +255,11 @@
    [5] For demo, refer to "index06.html" file.   
 
 -> Colors:
-   * Colors can be specified in the following 2 ways =>
+   * Colors can be specified in the following 3 ways =>
      [1] Color Names::
          Example - red, green, blue, white, black, lightgrey, grey, tomato, 
                    orange, dodgerblue, mediumseagreen, slateblue and violet etc.
-   
+     
      [2] Color Values::
          It can be represented in terms of - 
          [2.1] RGB Values 
@@ -267,6 +267,9 @@
          [2.3] HEX Values
          [2.4] HSL Values
          [2.5] HSLA Values
+         
+     [3] CSS "currentcolor" Keyword:: 
+         Refers to the value of the "color" property of a HTML element.
 
    * RGB (RED GREEN BLUE)::
      ----------------------
@@ -274,11 +277,12 @@
      [2] RED - Intensity of red color.
      [3] GREEN - Intensity of green color.
      [4] BLUE - Intensity of blue color.
-     [5] The intensity of the colors can be specified between 0(lowest) to 255(highest).  
+     [5] The intensity of the colors can be specified between 0(lowest) to 255(highest).
+         It can also be specified in terms of percentage(%) (from 0% to 100%).  
      [6] "rgb(0, 0, 0)" represents black color. 
      [7] "rgb(255, 255, 255)" represents white color.
      [8] Shades of gray are often defined using equal values for RED, GREEN and BLUE colors.
-
+      
    * RGBA (RED GREEN BLUE ALPHA)::
      -----------------------------
      [1] Formula: rgba(RED, GREEN, BLUE, ALPHA)
@@ -300,6 +304,11 @@
      [9] The formula "#RRGGBB" can be represented as "#RGB" only if both the values (RR, GG, and BB) 
          are the same for each component.  
 
+   * HEX with transparency::
+     ----------------------- 
+     [1] To add transparency to a HEX value, add two additional digits between "00" and "FF (/ ff)".      
+     [2] "00" is fully transparent and "FF (/ ff)" is not transparent at all.
+
    * HSL (HUE SATURATION LIGHTNESS)::
      --------------------------------
      [1] Formula: hsl(HUE, SATURATION, LIGHTNESS)
@@ -312,7 +321,7 @@
      [4] LIGHTNESS -  * Specifies the intensity of light.                    
                       * It is specified in terms of percentage(%) 
                         between 0%(no light / black) to 100%(full light / white).
-                      * 50% of lightness is idle as it is neither dark nor light.  
+                      * 50% of lightness is normal as it is neither dark nor light.  
 
    * HSLA (HUE SATURATION LIGHTNESS ALPHA)::
      ---------------------------------------
@@ -329,7 +338,41 @@
    * For HTML Color Codes, visit:
      https://htmlcolorcodes.com/
 
-   * For demo, refer to "index07.html" and "index08.html" files.  
+   * For demo, refer to "index07.html", "index08.html" and "index09.html" files.  
+
+-> CSS Background:
+   [1] background-color - Specifies the background color of an element.
+   
+   [2] opacity - * Defines the opacity / transparency of an element (i.e. for both background and the text).
+                 * It can be specified between the values from 0.0(lowest) to 1.0(highest).
+                 * The opacity is applied to both content and background.
+                 * The opacity defined for an element is inherited to all of it's child elements.
+
+   [3] background-image - Specifies an image to use as the background of an element.
+   
+   [4] background-repeat - Specifies whether to repeat the background image vertically or horizontally.
+   
+   [5] background-position - Specify the position of the background image.   
+   
+   [6] background-attachment - Specifies whether the background image should scroll or be fixed.
+   
+   [7] background-clip - Defines how far the background (color or image) should extend within an element.
+   
+   [8] background-origin - Specifies the origin position (the background positioning area) of a background image.
+                           This property has no effect if "background-attachment" is "fixed".
+   
+   [9] background-size - Specifies the size of the background image(s).           
+   
+   [10] background - Shorthand property for all background related properties.
+                     When using the shorthand property the order of the property values is:
+                     # background-color
+                     # background-image
+                     # background-repeat
+                     # background-attachment 
+                     # background-position  
+   
+   [11] For more details, visit:
+        https://www.w3schools.com/css/css_background_shorthand.asp
 
 
 
