@@ -242,9 +242,9 @@
    [1] Comments are used for documenting source codes.
    [2] Comments are ignored by the web browsers.
    [3] Syntax for single line comment =>
-
+   
        /* Sample single line comment. */
-
+  
    [4] Syntax for multi line comment => 
     
       /* 
@@ -253,7 +253,7 @@
            comment. 
        */
    [5] For demo, refer to "index06.html" file.   
-
+  
 -> Colors:
    * Colors can be specified in the following 3 ways =>
      [1] Color Names::
@@ -270,7 +270,7 @@
          
      [3] CSS "currentcolor" Keyword:: 
          Refers to the value of the "color" property of a HTML element.
-
+   
    * RGB (RED GREEN BLUE)::
      ----------------------
      [1] Formula: rgb(RED, GREEN, BLUE)      
@@ -290,7 +290,7 @@
      [3] It has just one additional parameter called as "ALPHA".
      [4] ALPHA represents the opacity / transparency of a color.
      [5] The value of ALPHA can be specified between 0.0 (fully transparent) and 1.0 (not transparent at all).
-  
+   
    * HEX (HEXADECIMAL)::
      --------------------   
      [1] Formula: #RRGGBB
@@ -341,13 +341,14 @@
    * For demo, refer to "index07.html", "index08.html" and "index09.html" files.  
 
 -> CSS Background:
+   ***************
    [1] background-color - Specifies the background color of an element.
    
    [2] opacity - * Defines the opacity / transparency of an element (i.e. for both background and the text).
                  * It can be specified between the values from 0.0(lowest) to 1.0(highest).
                  * The opacity is applied to both content and background.
                  * The opacity defined for an element is inherited to all of it's child elements.
-
+   
    [3] background-image - Specifies an image to use as the background of an element.
    
    [4] background-repeat - Specifies whether to repeat the background image vertically or horizontally.
@@ -370,9 +371,131 @@
                      # background-repeat
                      # background-attachment 
                      # background-position  
+
+   [11] Note: The background of an element is the total size of the element, including padding and border only.
+   
+   [12] For more details, visit:
+        https://www.w3schools.com/css/css_background_shorthand.asp
+   
+-> CSS Border:
+   ***********
+   [1] border-style - Specifies what kind of border to display.
+   
+   [2] border-width - Specifies the width of the four borders.
+   
+   [3] border-color - * Specifies the color of the four borders.
+                      * If not set, it inherits the color of the element.
+   
+   [4] border-radius -	Specifies all the four border-*-radius properties for rounded corners.
+   
+   [5] border - Shorthand property for all border related properties.
+                 
+   [6] border-top - Shorthand property for top side border related properties.
+   
+   [7] border-bottom - Shorthand property for bottom side border related properties.
+                   
+   [8] border-left - Shorthand property for left side border related properties.
+   
+   [9] border-right - Shorthand property for right side border related properties.
+   
+   [10] All the border related shorthand properties specify the following 3 properties -
+        [10.1] border-width
+        [10.2] border-style (required)
+        [10.3] border-color
    
    [11] For more details, visit:
-        https://www.w3schools.com/css/css_background_shorthand.asp
-
-
-
+        https://www.w3schools.com/css/css_border.asp
+    
+-> CSS Margin:
+   ***********
+   # Definition:: "Margins are used to create space around the elements, outside of any defined borders."
+   
+   [1] margin-top - Specifies the top margin of an element.
+   
+   [2] margin-bottom - Specifies the bottom margin of an element. 
+   
+   [3] margin-left - Specifies the left margin of an element.
+   
+   [4] margin-right	- Specifies the right margin of an element.
+   
+   [5] margin - * Shorthand property for setting all the margin properties in one declaration.
+                * It specifies the following individual properties respectively:
+                  [5.1] margin-top
+                  [5.2] margin-right
+                  [5.2] margin-bottom
+                  [5.2] margin-left
+   
+   [6] For more details, visit:
+       https://www.w3schools.com/css/css_margin.asp
+     
+-> CSS Padding:
+   ************
+   # Definition:: "Padding is used to create space around an element's content, inside of any defined borders." 
+   
+   [1] padding-top - Specifies the top padding of an element.
+   
+   [2] padding-bottom - Specifies the bottom padding of an element. 
+   
+   [3] padding-left - Specifies the left padding of an element.
+   
+   [4] padding-right	- Specifies the right padding of an element.
+   
+   [5] padding - * Shorthand property for setting all the padding properties in one declaration.
+                 * specifies the following individual properties respectively:
+                  [5.1] padding-top
+                  [5.2] padding-right
+                  [5.2] padding-bottom
+                  [5.2] padding-left
+   
+   [6] box-sizing: border-box - * Causes the element to maintain its actual width. 
+                                * If you increase the padding, the available content space will decrease.
+                                * For more details, visit:
+                                  https://www.w3schools.com/cssref/css3_pr_box-sizing.php
+    
+   [7] For more details, visit:
+       https://www.w3schools.com/css/css_padding.asp
+   
+-> CSS Height and Width:
+   *********************
+   [1] height -	Specifies the height of the content area of an element.
+   
+   [2] overflow - * Specifies what should happen if content overflows an element's box.
+                  * It only works for block elements with a specified height.
+                  * For more details, visit:
+                    https://www.w3schools.com/cssref/pr_pos_overflow.php
+   
+   [3] width -	Specifies the width of the content area of an element.
+   
+   [4] max-height -	Specifies the maximum height of the content area of an element.
+   
+   [5] max-width -	Specifies the maximum width of the content area of an element.
+   
+   [6] min-height -	Specifies the minimum height of the content area of an element.
+    
+   [7] min-width -	Specifies the minimum width of the content area of an element.
+   
+   [8] Note: * "height" and "width" properties do not include padding, borders, or margins.
+               They set the height/width of the area inside the padding, border, and margin of the element.    
+   
+             * If both the "width" property and the "max-width" property is specified on the same element, 
+               and the value of the "width" property is larger than the "max-width" property; 
+               the "max-width" property will be used and the "width" property will be ignored.   
+   
+   [9] For more details, visit:
+       https://www.w3schools.com/css/css_dimension.asp           
+   
+-> CSS Box Model:
+   **************
+   # Definition:: "Box that wraps around every HTML element."
+   
+   # It has the following 4 parts mentioned in the order of innermost part to outermost part: 
+     1. Content(It can be an image or text that appears.) [Innermost]
+     2. Padding
+     3. Border
+     4. Margin                                            [Outermost]
+     To visualize box model, visit: 
+     https://miro.medium.com/v2/resize:fit:1400/1*E_YuB8x1B3T3h6PIJ_I9qQ.png
+  
+   # For more details, visit: 
+     https://www.w3schools.com/css/css_boxmodel.asp
+     
