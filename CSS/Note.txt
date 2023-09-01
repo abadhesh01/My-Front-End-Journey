@@ -371,7 +371,7 @@
                      # background-repeat
                      # background-attachment 
                      # background-position  
-
+   
    [11] Note: The background of an element is the total size of the element, including padding and border only.
    
    [12] For more details, visit:
@@ -441,7 +441,7 @@
    [4] padding-right	- Specifies the right padding of an element.
    
    [5] padding - * Shorthand property for setting all the padding properties in one declaration.
-                 * specifies the following individual properties respectively:
+                 * It specifies the following individual properties respectively:
                   [5.1] padding-top
                   [5.2] padding-right
                   [5.2] padding-bottom
@@ -495,7 +495,33 @@
      4. Margin                                            [Outermost]
      To visualize box model, visit: 
      https://miro.medium.com/v2/resize:fit:1400/1*E_YuB8x1B3T3h6PIJ_I9qQ.png
-  
+   
    # For more details, visit: 
      https://www.w3schools.com/css/css_boxmodel.asp
      
+-> CSS Outline:
+   ************
+   [1] Definition:: "An outline is a line that is drawn around elements, OUTSIDE the borders
+                     (, to make the element stand out.)"      
+   
+   [2] outline-style - Specifies the style of the outline.
+   
+   [3] outline-width - Specifies the width of the outline.
+   
+   [4] outline-color - Specifies the color of the outline.
+   
+   [5] outline-offset - Specifies (transparent) space between an outline and the edge/border of an element.
+   
+   [6] outline - * Shorthand property for setting all the outline properties in one declaration.
+                 * It specifies the following individual properties respectively:
+                   [6.1] outline-width
+                   [6.2] outline-style (required)
+                   [6.3] outline-color
+   
+   [7] Note::  * The outline is NOT a part of the element's dimensions. 
+               * The element's total width and height is not affected by the "width" of the outline.   
+               * It may overlap other content.
+                     
+   [8] For more details, visit:
+       https://www.w3schools.com/css/css_outline.asp
+                                
