@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background</title>
+    <script type="text/javascript">
+     function getProperties(id) {
+        let element = document.getElementById(id);
+        let cssObject = window.getComputedStyle(element, null); 
+        document.write("Element Id: \"" + id + "\"<br />");
+        document.write("background-attachment: " + cssObject.getPropertyValue("background-attachment") + ";<br />");
+        document.write("background-clip: " + cssObject.getPropertyValue("background-clip") + ";<br />");
+        document.write("background-origin: " + cssObject.getPropertyValue("background-origin") + ";<br />");
+        document.write("background-position: " + cssObject.getPropertyValue("background-position") + ";<br />");
+        document.write("background-repeat: " + cssObject.getPropertyValue("background-repeat") + ";<br />");
+        document.write("background-size: " + cssObject.getPropertyValue("background-size") + ";<br />");
+     }       
+    </script>
+    <style type="text/css">
+
+        body {
+            background-color: dodgerblue;
+            color: white;
+            font-family: cursive;
+            font-weight: bold;
+        }
+
+        h1 {
+            background-color: crimson;
+            text-align: center;
+        }
+
+        section {
+            border: 30px solid rgba(0%, 100%, 0%, 0.7);
+            font-size: large;
+            height: 500px;
+            margin-top: 1%;
+            margin-right: auto;
+            margin-bottom: 1%;
+            margin-left: auto;
+            padding: 5%;
+            width: 80%;
+        }
+
+        div {
+            background-color: rgba(10%, 10%, 10%, 0.7);
+            margin: auto;
+            width: fit-content;
+        }
+
+        #section01 {
+            background-image: url("Pictures/Car.jpeg");
+            background-size: 150px;
+        }    
+
+        #section02A {
+            background-image: url("Pictures/Car.jpeg");
+            background-attachment: scroll;
+            background-clip: content-box;
+            background-repeat: repeat-x repeat-y; 
+            background-size: 150px; 
+        }
+
+        #section02B {
+            background-image: url("Pictures/Car.jpeg");
+            background-attachment: scroll;
+            background-clip: content-box;
+            background-origin: content-box;
+            background-repeat: repeat-x repeat-y;
+            background-size: 150px;  
+        }
+        
+        #section03A {
+            background-image: url("Pictures/Car.jpeg");
+            background-attachment: scroll;
+            background-clip: padding-box;
+            background-repeat: repeat-x repeat-y;
+            background-size: 150px;  
+        }
+
+        #section03B {
+            background-image: url("Pictures/Car.jpeg");
+            background-attachment: scroll;
+            background-clip: padding-box;
+            background-origin: padding-box;
+            background-repeat: repeat-x repeat-y;
+            background-size: 150px;  
+        }
+
+        #section04A {
+            background-image: url("Pictures/Car.jpeg");
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-repeat: repeat;
+            background-size: 150px;  
+        }
+
+        #section04B {
+            background-image: url("Pictures/Car.jpeg");
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-origin: border-box;
+            background-repeat: repeat;
+            background-size: 150px;  
+        }
+
+        #section05A {
+            background: tomato url("Pictures/Car.jpeg") no-repeat scroll top right;   
+            background-size: 150px;
+        }
+
+        #section05B {
+            background: yellow url("Pictures/Car.jpeg") no-repeat scroll center center;   
+            background-size: 150px;
+        }
+
+        #section05C {
+            background: palevioletred url("Pictures/Car.jpeg") no-repeat scroll bottom left;   
+            background-size: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Background Demo</h1>
+
+    <section id="section01">
+        <div>
+            <script type="text/javascript">getProperties("section01");</script>
+        </div>
+    </section>
+
+    <section id="section02A">
+        <div>
+            <script type="text/javascript">getProperties("section02A");</script>
+        </div>
+    </section>
+
+    <section id="section02B">
+        <div>
+            <script type="text/javascript">getProperties("section02B");</script>
+        </div>
+    </section>
+        
+    <section id="section03A">
+        <div>
+            <script type="text/javascript">getProperties("section03A");</script>
+        </div>
+    </section>
+
+    <section id="section03B">
+        <div>
+            <script type="text/javascript">getProperties("section03B");</script>
+        </div>
+    </section>
+
+    <section id="section04A">
+        <div>
+            <script type="text/javascript">getProperties("section04A");</script>
+        </div>
+    </section>
+
+    <section id="section04B">
+        <div>
+            <script type="text/javascript">getProperties("section04B");</script>
+        </div>
+    </section>
+
+    <section id="section05A">
+        <div>
+            <script type="text/javascript">getProperties("section05A");</script>
+        </div>
+    </section>
+
+    <section id="section05B">
+        <div>
+            <script type="text/javascript">getProperties("section05B");</script>
+        </div>
+    </section>
+
+    <section id="section05C">
+        <div>
+            <script type="text/javascript">getProperties("section05C");</script>
+        </div>
+    </section>
+    
+</body>
+</html>

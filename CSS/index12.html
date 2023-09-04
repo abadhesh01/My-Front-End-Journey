@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Custom Background</title>
+    <script type="text/javascript">
+
+       function setDefaults() {
+        let customBackgroundProperties = window.getComputedStyle(document.getElementById("customBackground"), null);
+        document.getElementById("backgroundClipOutput").innerHTML = customBackgroundProperties
+                                                                    .getPropertyValue("background-clip");
+        document.getElementById("backgroundOriginOutput").innerHTML = customBackgroundProperties
+                                                                      .getPropertyValue("background-origin");
+        document.getElementById("backgroundPositionOutput").innerHTML = customBackgroundProperties
+                                                                        .getPropertyValue("background-position");;
+        document.getElementById("backgroundRepeatOutput").innerHTML = customBackgroundProperties
+                                                                      .getPropertyValue("background-repeat");;
+       }
+
+       function setBackgroundClip(value) {
+        document.getElementById("customBackground").style.backgroundClip = value;
+        document.getElementById("backgroundClipOutput").innerHTML = value;
+       }
+
+       function setBackgroundOrigin(value) {
+        document.getElementById("customBackground").style.backgroundOrigin = value;
+        document.getElementById("backgroundOriginOutput").innerHTML = value;
+       }
+
+       function setBackgroundPosition(value) {
+        document.getElementById("customBackground").style.backgroundPosition = value;
+        document.getElementById("backgroundPositionOutput").innerHTML = value;
+       }
+
+       function setBackgroundRepeat(value) {
+        document.getElementById("customBackground").style.backgroundRepeat = value;
+        document.getElementById("backgroundRepeatOutput").innerHTML = value;
+       }
+
+    </script>
+    <style type="text/css">
+       
+       body {
+        background-color: dodgerblue;
+        color: yellow;
+        font-family: cursive;
+       }
+
+       h1 {
+        text-align: center;
+       }
+
+       section {
+        display: flex;
+       }
+
+       div {
+        border: 25px solid hsla(61, 100%, 50%, 0.5);
+        height: 400px;
+        margin: auto; 
+        padding: 3%; 
+        width: 40%;
+       }
+
+       label,input {
+        font-size: large;
+        font-weight: bold;
+       }
+
+       input {
+        background-color: pink;
+        border: 2px solid palevioletred;
+        color: crimson;
+        font-family: cursive; 
+        margin: 1%;
+       }
+
+       input:active {
+        background-color: lightgreen;
+        border: 2px solid green;
+        color: darkgreen; 
+       }
+       
+       span {
+        background-color: greenyellow;
+        color: crimson;
+       }
+
+       #customBackground {
+        background: green url("Pictures/Car.jpeg") no-repeat scroll;  
+        background-size: 125px;
+       }
+
+    </style>
+</head>
+<body onload="setDefaults();">
+    <h1>CSS Custom Background Demo</h1>
+
+    <section>
+        <div id="customBackground"></div>
+        <div id="customBackgroundControl">
+          <label>background-clip: <span id="backgroundClipOutput"></span></label> 
+          <br />
+          <input type="button" value="border-box" onclick="setBackgroundClip('border-box');">
+          <input type="button" value="padding-box" onclick="setBackgroundClip('padding-box');">
+          <input type="button" value="content-box" onclick="setBackgroundClip('content-box');">
+          <br />
+
+          <label>background-origin: <span id="backgroundOriginOutput"></span></label>
+          <br />
+          <input type="button" value="border-box" onclick="setBackgroundOrigin('border-box');">
+          <input type="button" value="padding-box" onclick="setBackgroundOrigin('padding-box');">
+          <input type="button" value="content-box" onclick="setBackgroundOrigin('content-box');"> 
+          <br />
+
+          <label>background-position: <span id="backgroundPositionOutput"></span></label>
+          <br />
+          <input type="button" value="top left" onclick="setBackgroundPosition('top left');">
+          <input type="button" value="top center" onclick="setBackgroundPosition('top center');">
+          <input type="button" value="top right" onclick="setBackgroundPosition('top right');">
+          <br />
+          <input type="button" value="center left" onclick="setBackgroundPosition('center left');">
+          <input type="button" value="center center" onclick="setBackgroundPosition('center center');">
+          <input type="button" value="center right" onclick="setBackgroundPosition('center right');">
+          <br />
+          <input type="button" value="bottom left" onclick="setBackgroundPosition('bottom left');">
+          <input type="button" value="bottom center" onclick="setBackgroundPosition('bottom center');">
+          <input type="button" value="bottom right" onclick="setBackgroundPosition('bottom right');">
+          <br /> 
+
+          <label>background-repeat: <span id="backgroundRepeatOutput"></span></label>
+          <br />
+          <input type="button" value="no-repeat" onclick="setBackgroundRepeat('no-repeat');">
+          <input type="button" value="repeat" onclick="setBackgroundRepeat('repeat');">
+          <input type="button" value="repeat-x" onclick="setBackgroundRepeat('repeat-x');">
+          <input type="button" value="repeat-y" onclick="setBackgroundRepeat('repeat-y');">
+          <br />
+        </div>
+    </section>
+
+    
+</body>
+</html>

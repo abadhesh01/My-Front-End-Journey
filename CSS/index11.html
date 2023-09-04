@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fixed / Scrolling Background</title>
+    <script type="text/javascript">
+        function alterBackgroundAttachment() {
+           let body = document.getElementById("index11Body");
+           let button = document.getElementById("index11Button"); 
+           if (window.getComputedStyle(body, null).getPropertyValue("background-attachment") == "fixed") {            
+               body.style.backgroundAttachment = "scroll";
+               button.value = "Click here for FIXED background";
+           } else {
+               body.style.backgroundAttachment = "fixed";
+               button.value = "Click here for SCROLLING Background";
+           } 
+        }
+    </script>
+    <style type="text/css">
+
+        body {
+            background-color: dodgerblue;
+            background-image: url("Pictures/CSS3_LOGO.png");
+            background-attachment: fixed;
+            background-size: 125px;
+            color: white;
+            font-family: fantasy;
+        }
+
+        h1, section {
+            background-color: hsla(0, 0%, 0%, 0.7);
+            color: yellow;
+            width: fit-content;
+        }
+
+        input {
+            color: green;
+            background-color: lightgreen;
+            border: 5px solid green;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            font-family: cursive;
+            font-size: large;
+            font-weight: bold;
+            margin: 1%;
+            padding: 2%;
+        }
+
+        input:active {
+            color: blue;
+            background-color: skyblue;
+            border: 5px solid blue;
+        }
+    </style>
+</head>
+<body id="index11Body">
+    <h1>CSS Fixed / Scrolling Background Demo</h1>
+
+    <input id="index11Button" type="button" value="Click here for SCROLLING Background" 
+     onclick="alterBackgroundAttachment();">
+
+    <section>
+        <script type="text/javascript">
+            for (let count = 0; count < 101; count ++)
+              document.write("<br />Sample Dummy Line \"" + count + "\".<br />");
+          </script>
+    </section>
+        
+</body>
+</html>
