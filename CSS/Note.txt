@@ -498,26 +498,26 @@
    
    # For more details, visit: 
      https://www.w3schools.com/css/css_boxmodel.asp
-     
+      
 -> CSS Outline:
    ************
    [1] Definition:: "An outline is a line that is drawn around elements, OUTSIDE the borders
                      (, to make the element stand out.)"      
-   
+       
    [2] outline-style - Specifies the style of the outline.
-   
+       
    [3] outline-width - Specifies the width of the outline.
-   
+       
    [4] outline-color - Specifies the color of the outline.
-   
+       
    [5] outline-offset - Specifies (transparent) space between an outline and the edge/border of an element.
-   
+       
    [6] outline - * Shorthand property for setting all the outline properties in one declaration.
                  * It specifies the following individual properties respectively:
                    [6.1] outline-width
                    [6.2] outline-style (required)
                    [6.3] outline-color
-   
+       
    [7] Note::  * The outline is NOT a part of the element's dimensions. 
                * The element's total width and height is not affected by the "width" of the outline.   
                * It may overlap other content.
@@ -525,3 +525,79 @@
    [8] For more details, visit:
        https://www.w3schools.com/css/css_outline.asp
                                 
+-> CSS Text:
+   *********
+   [1] Text Color:
+       [1.1] color - Specifies the color of text.
+       
+       [1.2] For more details; visit:
+             https://www.w3schools.com/cssref/pr_text_color.php
+       
+   [2] Text Align:
+       [2.1] text-align - Specifies the horizontal alignment of a text.
+       
+       [2.2] text-align-last - Specifies the alignment of last line of a text.
+       
+       [2.3] vertical-align -	Specifies the vertical alignment of an element.
+       
+       [2.4] For more details; visit:
+             https://www.w3schools.com/css/css_text_align.asp
+       
+   [3] Text Direction:
+       [3.1] direction - Specifies the text direction/writing direction within a block-level element.
+       
+       [3.2] unicode-bidi	- Used together with the "direction" property to set or return whether the text 
+                            should be overridden to support multiple languages in the same document.
+       
+       [3.3] For more details; visit:
+             https://www.w3schools.com/css/css_text_decoration.asp
+       
+   [4] Text Decoration:
+       [4.1] text-decoration-color - Specifies the color of the text-decoration.
+       
+       [4.2] text-decoration-line	- * Specifies the kind of text decoration to be used (underline, overline, etc.).
+                                    * Multiple values can also be combined together for output. 
+       
+       [4.3] text-decoration-style - Specifies the style of the text decoration (solid, dotted, etc.).
+       
+       [4.4] text-decoration-thickness - Specifies the thickness of the text decoration line.                           
+       
+       [4.5] text-decoration - * Shorthand property for setting all the text decoration properties in one declaration.
+                               * It specifies the following individual properties respectively:
+                                 [4.5.1] text-decoration-line (required)
+                                 [4.5.2] text-decoration-color
+                                 [4.5.3] text-decoration-style 
+                                 [4.5.4] text-decoration-thickness
+       
+       [4.6] For more details; visit:
+             https://www.w3schools.com/css/css_text_decoration.asp
+       
+   [5] Text Transformation:
+       [5.1] text-transform -	Controls the capitalization of text.
+       
+       [5.2] For more details; visit:
+             https://www.w3schools.com/css/css_text_transformation.asp
+       
+   [6] Text Spacing: 
+       [6.1] letter-spacing -	Specifies the space between the characters in a text.
+       
+       [6.2] line-height - Specifies the space between the lines in a text.
+       
+       [6.3] text-indent - Specifies the indentation of the first line in a text-block.
+       
+       [6.4] white-space - Specifies how to handle white-space inside an element.
+       
+       [6.5] word-spacing	- Specifies the space between words in a text.
+       
+       [6.6] For more details; visit:
+             https://www.w3schools.com/css/css_text_spacing.asp
+        
+   [7] Text Shadow:           
+       [7.1] text-shadow - Adds shadow to text.
+       
+       [7.2] Syntax:
+             text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit
+       
+       [7.3] For more visit:
+             https://www.w3schools.com/css/css_text_shadow.asp
+       
