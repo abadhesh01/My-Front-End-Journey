@@ -1,4 +1,23 @@
 
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Lesson Learned:
+    ---------------
+    Observed the differences in output with the following "background" properties
+    with different values:
+    [1] background-clip
+    [2] background-origin
+    [3] background-position
+    [4] background-repeat
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +27,11 @@
     <script type="text/javascript">
 
        function setDefaults() {
+        /*
+           This function sets the "background-clip", "background-origin", "background-position" and
+           "background-repeat" properties of output window to their default / initial values when the page
+           loads.
+        */
         let customBackgroundProperties = window.getComputedStyle(document.getElementById("customBackground"), null);
         document.getElementById("backgroundClipOutput").innerHTML = customBackgroundProperties
                                                                     .getPropertyValue("background-clip");
@@ -20,27 +44,41 @@
        }
 
        function setBackgroundClip(value) {
+        /*
+          This function changes the "background-clip" property of output window with the provided value.
+        */
         document.getElementById("customBackground").style.backgroundClip = value;
         document.getElementById("backgroundClipOutput").innerHTML = value;
        }
 
        function setBackgroundOrigin(value) {
+        /*
+          This function changes the "background-origin" property of output window with the provided value.
+        */
         document.getElementById("customBackground").style.backgroundOrigin = value;
         document.getElementById("backgroundOriginOutput").innerHTML = value;
        }
 
        function setBackgroundPosition(value) {
+        /*
+          This function changes the "background-position" property of output window with the provided value.
+        */
         document.getElementById("customBackground").style.backgroundPosition = value;
         document.getElementById("backgroundPositionOutput").innerHTML = value;
        }
 
        function setBackgroundRepeat(value) {
+        /*
+          This function changes the "background-repeat" property of output window with the provided value.
+        */
         document.getElementById("customBackground").style.backgroundRepeat = value;
         document.getElementById("backgroundRepeatOutput").innerHTML = value;
        }
 
     </script>
     <style type="text/css">
+
+       /* Styling the entire HTML page. */  
        
        body {
         background-color: dodgerblue;
@@ -88,8 +126,12 @@
         color: crimson;
        }
 
+       /*
+          The "div" element with ID "customBackground" represents the output window.
+       */
        #customBackground {
-        background: green url("Pictures/Car.jpeg") no-repeat scroll;  
+        /* The "background-attachment" property has been set to "no-repeat". */
+        background: green url("Pictures/Car.jpeg") no-repeat;  
         background-size: 125px;
        }
 
@@ -99,8 +141,19 @@
     <h1>CSS Custom Background Demo</h1>
 
     <section>
-        <div id="customBackground"></div>
+        <!-- This is the "OUTPUT WINDOW". -->
+        <div id="customBackground"></div> 
+        
+        <!-- 
+            This is a set of controls to alter the "background-clip",
+            "background-origin", "background-position" and "background-repeat"  
+            properties of output window.
+        -->
         <div id="customBackgroundControl">
+          <!--
+            Input buttons to change the values of "background-clip" property of output window
+            using "setBackgroundClip()" function defined in "script" element of "head" element.
+          -->  
           <label>background-clip: <span id="backgroundClipOutput"></span></label> 
           <br />
           <input type="button" value="border-box" onclick="setBackgroundClip('border-box');">
@@ -108,6 +161,10 @@
           <input type="button" value="content-box" onclick="setBackgroundClip('content-box');">
           <br />
 
+          <!--
+            Input buttons to change the values of "background-origin" property of output window
+            using "setBackgroundOrigin()" function defined in "script" element of "head" element.
+          -->
           <label>background-origin: <span id="backgroundOriginOutput"></span></label>
           <br />
           <input type="button" value="border-box" onclick="setBackgroundOrigin('border-box');">
@@ -115,6 +172,10 @@
           <input type="button" value="content-box" onclick="setBackgroundOrigin('content-box');"> 
           <br />
 
+          <!--
+            Input buttons to change the values of "background-position" property of output window
+            using "setBackgroundPosition()" function defined in "script" element of "head" element.
+          -->
           <label>background-position: <span id="backgroundPositionOutput"></span></label>
           <br />
           <input type="button" value="top left" onclick="setBackgroundPosition('top left');">
@@ -130,6 +191,10 @@
           <input type="button" value="bottom right" onclick="setBackgroundPosition('bottom right');">
           <br /> 
 
+          <!--
+            Input buttons to change the values of "background-repeat" property of output window
+            using "setBackgroundRepeat()" function defined in "script" element of "head" element.
+          -->
           <label>background-repeat: <span id="backgroundRepeatOutput"></span></label>
           <br />
           <input type="button" value="no-repeat" onclick="setBackgroundRepeat('no-repeat');">
@@ -140,6 +205,5 @@
         </div>
     </section>
 
-    
 </body>
 </html>

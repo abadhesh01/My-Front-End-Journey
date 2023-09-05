@@ -1,4 +1,26 @@
 
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Lesson Learned:
+    ---------------
+    CSS "background" Properties => 
+    [1] background
+    [2] background-attachment
+    [3] background-clip
+    [4] background-origin
+    [5] background-position
+    [6] background-repeat
+    [7] background-size
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +29,7 @@
     <title>CSS Background</title>
     <script type="text/javascript">
      function getProperties(id) {
+        /* This function prints all the CSS background related properties. */
         let element = document.getElementById(id);
         let cssObject = window.getComputedStyle(element, null); 
         document.write("Element Id: \"" + id + "\"<br />");
@@ -20,6 +43,7 @@
     </script>
     <style type="text/css">
 
+        /* Styling the "body", "h1", "section" and "div" elements. */
         body {
             background-color: dodgerblue;
             color: white;
@@ -50,11 +74,13 @@
             width: fit-content;
         }
 
+        /* Styling the "section" element with ID "section01". */
         #section01 {
             background-image: url("Pictures/Car.jpeg");
             background-size: 150px;
         }    
 
+        /* Styling the "section" element with ID "section02A". */
         #section02A {
             background-image: url("Pictures/Car.jpeg");
             background-attachment: scroll;
@@ -63,6 +89,7 @@
             background-size: 150px; 
         }
 
+        /* Styling the "section" element with ID "section02B". */
         #section02B {
             background-image: url("Pictures/Car.jpeg");
             background-attachment: scroll;
@@ -72,6 +99,7 @@
             background-size: 150px;  
         }
         
+        /* Styling the "section" element with ID "section03A". */
         #section03A {
             background-image: url("Pictures/Car.jpeg");
             background-attachment: scroll;
@@ -80,6 +108,7 @@
             background-size: 150px;  
         }
 
+        /* Styling the "section" element with ID "section03B". */
         #section03B {
             background-image: url("Pictures/Car.jpeg");
             background-attachment: scroll;
@@ -89,6 +118,7 @@
             background-size: 150px;  
         }
 
+        /* Styling the "section" element with ID "section04A". */
         #section04A {
             background-image: url("Pictures/Car.jpeg");
             background-attachment: scroll;
@@ -97,6 +127,7 @@
             background-size: 150px;  
         }
 
+        /* Styling the "section" element with ID "section04B". */
         #section04B {
             background-image: url("Pictures/Car.jpeg");
             background-attachment: scroll;
@@ -106,17 +137,23 @@
             background-size: 150px;  
         }
 
+        /* Styling the "section" element with ID "section05A". */
         #section05A {
+            /* Shorthand declaration of background properties. */
             background: tomato url("Pictures/Car.jpeg") no-repeat scroll top right;   
             background-size: 150px;
         }
 
+        /* Styling the "section" element with ID "section05B". */
         #section05B {
+            /* Shorthand declaration of background properties. */
             background: yellow url("Pictures/Car.jpeg") no-repeat scroll center center;   
             background-size: 150px;
         }
 
+        /* Styling the "section" element with ID "section05C". */
         #section05C {
+            /* Shorthand declaration of background properties. */
             background: palevioletred url("Pictures/Car.jpeg") no-repeat scroll bottom left;   
             background-size: 150px;
         }

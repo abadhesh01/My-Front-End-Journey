@@ -1,4 +1,18 @@
 
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Lesson Learned:
+    ---------------
+    Observed the "background-attachment" property with different values.
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,43 +20,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Fixed / Scrolling Background</title>
     <script type="text/javascript">
+        /* 
+          This function alters the value of the "background-attachment" property of "body" element
+          to either "fixed" or "scroll".
+        */
         function alterBackgroundAttachment() {
-           let body = document.getElementById("index11Body");
-           let button = document.getElementById("index11Button"); 
-           if (window.getComputedStyle(body, null).getPropertyValue("background-attachment") == "fixed") {            
+           let body = document.getElementById("index11Body"); /* Getting the "body" element. */
+           let button = document.getElementById("index11Button"); /* Getting the input button */
+           if (window.getComputedStyle(body, null).getPropertyValue("background-attachment") == "fixed") {
+               /*
+                 If the value of "background-attachment" property of "body" element is "fixed", then
+                 altering it to "scroll" and also altering the input button value.   
+               */            
                body.style.backgroundAttachment = "scroll";
                button.value = "Click here for FIXED background";
            } else {
+               /*
+                 If the value of "background-attachment" property of "body" element is "scroll", then
+                 altering it to "fixed" and also altering the input button value.   
+               */
                body.style.backgroundAttachment = "fixed";
-               button.value = "Click here for SCROLLING Background";
+               button.value = "Click here for SCROLLING background";
            } 
         }
     </script>
     <style type="text/css">
 
+        /* Styling the "body" element. */
         body {
             background-color: dodgerblue;
             background-image: url("Pictures/CSS3_LOGO.png");
+            /* The "background-attachment" is set to "fixed" when the page loads. */
             background-attachment: fixed;
             background-size: 125px;
             color: white;
             font-family: fantasy;
         }
 
+        /* Styling the "h1" and "section" elements. */
         h1, section {
             background-color: hsla(0, 0%, 0%, 0.7);
             color: yellow;
             width: fit-content;
         }
 
+        /* Styling the "input" button. */
         input {
             color: green;
             background-color: lightgreen;
             border: 5px solid green;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom-right-radius: 25px;
-            border-bottom-left-radius: 25px;
+            border-radius: 25px;
             font-family: cursive;
             font-size: large;
             font-weight: bold;
@@ -50,6 +77,7 @@
             padding: 2%;
         }
 
+        /* Styling the "input" button for when it is activated by clicking. */
         input:active {
             color: blue;
             background-color: skyblue;
@@ -60,9 +88,15 @@
 <body id="index11Body">
     <h1>CSS Fixed / Scrolling Background Demo</h1>
 
-    <input id="index11Button" type="button" value="Click here for SCROLLING Background" 
+    <!-- 
+        This is an input button that alters the value of "background-attachment" property of
+        "body" element to either "fixed" or "scroll" by calling the "alterBackgroundAttachment()"
+        function defined in "script" element of "head" element. 
+     -->
+    <input id="index11Button" type="button" value="Click here for SCROLLING background" 
      onclick="alterBackgroundAttachment();">
 
+    <!-- Printing 101 dummy lines. --> 
     <section>
         <script type="text/javascript">
             for (let count = 0; count < 101; count ++)
