@@ -416,7 +416,7 @@
    
    [3] margin-left - Specifies the left margin of an element.
    
-   [4] margin-right	- Specifies the right margin of an element.
+   [4] margin-right - Specifies the right margin of an element.
    
    [5] margin - * Shorthand property for setting all the margin properties in one declaration.
                 * It specifies the following individual properties respectively:
@@ -438,7 +438,7 @@
    
    [3] padding-left - Specifies the left padding of an element.
    
-   [4] padding-right	- Specifies the right padding of an element.
+   [4] padding-right - Specifies the right padding of an element.
    
    [5] padding - * Shorthand property for setting all the padding properties in one declaration.
                  * It specifies the following individual properties respectively:
@@ -466,13 +466,13 @@
    
    [3] width -	Specifies the width of the content area of an element.
    
-   [4] max-height -	Specifies the maximum height of the content area of an element.
+   [4] max-height - Specifies the maximum height of the content area of an element.
    
-   [5] max-width -	Specifies the maximum width of the content area of an element.
+   [5] max-width - Specifies the maximum width of the content area of an element.
    
-   [6] min-height -	Specifies the minimum height of the content area of an element.
+   [6] min-height - Specifies the minimum height of the content area of an element.
     
-   [7] min-width -	Specifies the minimum width of the content area of an element.
+   [7] min-width - Specifies the minimum width of the content area of an element.
    
    [8] Note: * "height" and "width" properties do not include padding, borders, or margins.
                They set the height/width of the area inside the padding, border, and margin of the element.    
@@ -538,7 +538,7 @@
        
        [2.2] text-align-last - Specifies the alignment of last line of a text.
        
-       [2.3] vertical-align -	Specifies the vertical alignment of an element.
+       [2.3] vertical-align - Specifies the vertical alignment of an element.
        
        [2.4] For more details; visit:
              https://www.w3schools.com/css/css_text_align.asp
@@ -546,7 +546,7 @@
    [3] Text Direction:
        [3.1] direction - Specifies the text direction/writing direction within a block-level element.
        
-       [3.2] unicode-bidi	- Used together with the "direction" property to set or return whether the text 
+       [3.2] unicode-bidi - Used together with the "direction" property to set or return whether the text 
                             should be overridden to support multiple languages in the same document.
        
        [3.3] For more details; visit:
@@ -555,7 +555,7 @@
    [4] Text Decoration:
        [4.1] text-decoration-color - Specifies the color of the text-decoration.
        
-       [4.2] text-decoration-line	- * Specifies the kind of text decoration to be used (underline, overline, etc.).
+       [4.2] text-decoration-line - * Specifies the kind of text decoration to be used (underline, overline, etc.).
                                     * Multiple values can also be combined together for output. 
        
        [4.3] text-decoration-style - Specifies the style of the text decoration (solid, dotted, etc.).
@@ -573,13 +573,13 @@
              https://www.w3schools.com/css/css_text_decoration.asp
        
    [5] Text Transformation:
-       [5.1] text-transform -	Controls the capitalization of text.
+       [5.1] text-transform - Controls the capitalization of text.
        
        [5.2] For more details; visit:
              https://www.w3schools.com/css/css_text_transformation.asp
        
    [6] Text Spacing: 
-       [6.1] letter-spacing -	Specifies the space between the characters in a text.
+       [6.1] letter-spacing - Specifies the space between the characters in a text.
        
        [6.2] line-height - Specifies the space between the lines in a text.
        
@@ -587,7 +587,7 @@
        
        [6.4] white-space - Specifies how to handle white-space inside an element.
        
-       [6.5] word-spacing	- Specifies the space between words in a text.
+       [6.5] word-spacing - Specifies the space between words in a text.
        
        [6.6] For more details; visit:
              https://www.w3schools.com/css/css_text_spacing.asp
@@ -622,9 +622,9 @@
        
        [2.2] font-size - Specifies the font size of the text.
        
-       [2.3] font-style -	Specifies the font style for the text( i.e. "normal" or "italic" or "oblique").
+       [2.3] font-style - Specifies the font style for the text( i.e. "normal" or "italic" or "oblique").
        
-       [2.4] font-variant -	Specifies whether or not a text should be displayed in a small-caps font
+       [2.4] font-variant - Specifies whether or not a text should be displayed in a small-caps font
                             (i.e. "normal" or "small-caps").
        
        [2.5] font-weight - Specifies the weight of a font.   
