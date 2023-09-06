@@ -355,7 +355,7 @@
    
    [5] background-position - Specify the position of the background image.   
    
-   [6] background-attachment - Specifies whether the background image should scroll or be fixed.
+   [6] background-attachment - Specifies whether the background image should "scroll" or be "fixed".
    
    [7] background-clip - Defines how far the background (color or image) should extend within an element.
    
@@ -364,8 +364,8 @@
    
    [9] background-size - Specifies the size of the background image(s).           
    
-   [10] background - Shorthand property for all background related properties.
-                     When using the shorthand property the order of the property values is:
+   [10] background - Shorthand property for all the background related properties.
+                     When using the shorthand property, the order of the property values is:
                      # background-color
                      # background-image
                      # background-repeat
@@ -388,7 +388,7 @@
    
    [4] border-radius -	Specifies all the four border-*-radius properties for rounded corners.
    
-   [5] border - Shorthand property for all border related properties.
+   [5] border - Shorthand property for all the border related properties.
                  
    [6] border-top - Shorthand property for top side border related properties.
    
@@ -408,7 +408,7 @@
     
 -> CSS Margin:
    ***********
-   # Definition:: "Margins are used to create space around the elements, outside of any defined borders."
+   # Definition:: "Margins are used to create space around the elements', outside of any defined borders."
    
    [1] margin-top - Specifies the top margin of an element.
    
@@ -430,7 +430,7 @@
      
 -> CSS Padding:
    ************
-   # Definition:: "Padding is used to create space around an element's content, inside of any defined borders." 
+   # Definition:: "Padding is used to create space around the elements' content, inside of any defined borders." 
    
    [1] padding-top - Specifies the top padding of an element.
    
@@ -442,10 +442,10 @@
    
    [5] padding - * Shorthand property for setting all the padding properties in one declaration.
                  * It specifies the following individual properties respectively:
-                  [5.1] padding-top
-                  [5.2] padding-right
-                  [5.2] padding-bottom
-                  [5.2] padding-left
+                   [5.1] padding-top
+                   [5.2] padding-right
+                   [5.2] padding-bottom
+                   [5.2] padding-left
    
    [6] box-sizing: border-box - * Causes the element to maintain its actual width. 
                                 * If you increase the padding, the available content space will decrease.
@@ -459,7 +459,7 @@
    *********************
    [1] height -	Specifies the height of the content area of an element.
    
-   [2] overflow - * Specifies what should happen if content overflows an element's box.
+   [2] overflow - * Specifies what should happen if the content overflows an element's box.
                   * It only works for block elements with a specified height.
                   * For more details, visit:
                     https://www.w3schools.com/cssref/pr_pos_overflow.php
@@ -528,7 +528,7 @@
 -> CSS Text:
    *********
    [1] Text Color:
-       [1.1] color - Specifies the color of text.
+       [1.1] color - Specifies the color of the text.
        
        [1.2] For more details; visit:
              https://www.w3schools.com/cssref/pr_text_color.php
@@ -598,6 +598,53 @@
        [7.2] Syntax:
              text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit
        
-       [7.3] For more visit:
+       [7.3] For more details, visit:
              https://www.w3schools.com/css/css_text_shadow.asp
+   
+-> CSS Font:
+   *********
+   [1] CSS Generic Font Families:
+       [1.1] Serif - * Each letter has small strokes at edges. 
+                     * It creates a sense of formality and elegance. 
+       
+       [1.2] Sans-serif - * Each letter has clean lines.
+                          * It creates a sense of modern and minimalistic look. 
+       
+       [1.3] Monospace - * All letters have same fixed width.
+                         * It creates a sense of mechanical look.
+       
+       [1.4] Cursive - Imitates human handwriting. 
+       
+       [1.5] Fantasy - Imitates decorative / playful fonts.
+       
+   [2] Font Properties:
+       [2.1] font-family - Specifies the font family for the text.
+       
+       [2.2] font-size - Specifies the font size of the text.
+       
+       [2.3] font-style -	Specifies the font style for the text( i.e. "normal" or "italic" or "oblique").
+       
+       [2.4] font-variant -	Specifies whether or not a text should be displayed in a small-caps font
+                            (i.e. "normal" or "small-caps").
+       
+       [2.5] font-weight - Specifies the weight of a font.   
+       
+       [2.6] text-decoration - * Shorthand property for setting all the font properties in one declaration.
+                               * It specifies the following individual properties respectively:
+                                 [2.6.1] font-style
+                                 [2.6.2] font-variant
+                                 [2.6.3] font-weight
+                                 [2.6.4] font-size (require) /line-height
+                                 [2.6.5] font-family (required)
+                         
+   [3] For more details; visit:
+       https://www.w3schools.com/css/css_font_shorthand.asp
+       
+   [4] For Google Fonts; visit:
+       https://fonts.google.com/
+       
+   [5] For a list of font families; visit:
+       https://www.w3.org/Style/Examples/007/fonts.en.html           
+
+
        
