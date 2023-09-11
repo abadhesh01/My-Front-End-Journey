@@ -1,0 +1,306 @@
+
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Lesson Learned:
+    ---------------
+    CSS Border Properties => 
+    [1] border               
+    [2] border-width         
+    [3] border-style         
+    [4] border-color         
+    .........................
+    [5] border-top           
+    [6] border-top-width     
+    [7] border-top-style     
+    [8] border-top-color     
+    .........................
+    [9] border-right         
+    [10] border-right-width  
+    [11] border-right-style  
+    [12] border-right-color  
+    .........................
+    [13] border-bottom       
+    [14] border-bottom-width 
+    [15] border-bottom-style 
+    [16] border-bottom-color 
+    .........................
+    [17] border-left         
+    [18] border-left-width   
+    [19] border-left-style   
+    [20] border-left-color   
+    .........................
+    [21] border-radius
+    [22] border-top-left-radius
+    [23] border-top-right-radius
+    [24] border-bottom-right-radius
+    [25] border-bottom-left-radius
+
+    CSS Margin Properties =>
+    [1] margin
+    [2] margin-top
+    [3] margin-right
+    [4] margin-bottom
+    [5] margin-left
+
+    CSS Padding Properties =>
+    [1] padding
+    [2] padding-top
+    [3] padding-right
+    [4] padding-bottom
+    [5] padding-left
+
+    CSS Outline Properties =>
+    [1] outline
+    [2] outline-width         
+    [3] outline-style         
+    [4] outline-color
+    [5] outline-offset         
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border, Margin, Padding & Outline</title>
+</head>
+<script type="text/javascript">
+    function printSectionProperties(sectionID) {
+       /*
+        This function prints the following CSS properties for the specified "section" element id:
+        [1] border
+        [2] border-top
+        [3] border-right
+        [4] border-bottom
+        [5] border-left
+        [6] border-radius
+        [7] padding
+        [8] padding-top
+        [9] padding-right
+        [10] padding-bottom
+        [11] padding-left
+        [12] margin
+        [13] margin-top
+        [14] margin-right
+        [15] margin-bottom
+        [16] margin-left
+        [17] outline
+        [18] outline-offset
+       */ 
+       let currentElement = document.getElementById(sectionID);
+       let currentElementStyle = window.getComputedStyle(currentElement, null);
+       currentElement.innerHTML = "Section ID: \"" + sectionID + "\"<br />";
+       currentElement.innerHTML += "<br />border: " + currentElementStyle.getPropertyValue("border") + ";<br />";
+       currentElement.innerHTML += "border-top: " + currentElementStyle.getPropertyValue("border-top") + ";<br />";
+       currentElement.innerHTML += "border-right: " + currentElementStyle.getPropertyValue("border-right") + ";<br />";
+       currentElement.innerHTML += "border-bottom: " + currentElementStyle.getPropertyValue("border-bottom") + ";<br />";
+       currentElement.innerHTML += "border-left: " + currentElementStyle.getPropertyValue("border-left") + ";<br />";
+       currentElement.innerHTML += "border-radius: " + currentElementStyle.getPropertyValue("border-radius") + ";<br />";
+       currentElement.innerHTML += "<br />padding: " + currentElementStyle.getPropertyValue("padding") + ";<br />";
+       currentElement.innerHTML += "padding-top: " + currentElementStyle.getPropertyValue("padding-top") + ";<br />";
+       currentElement.innerHTML += "padding-right: " + currentElementStyle.getPropertyValue("padding-right") + ";<br />";
+       currentElement.innerHTML += "padding-bottom: " + currentElementStyle.getPropertyValue("padding-bottom") + ";<br />";
+       currentElement.innerHTML += "padding-left: " + currentElementStyle.getPropertyValue("padding-left") + ";<br />";
+       currentElement.innerHTML += "<br />margin: " + currentElementStyle.getPropertyValue("margin") + ";<br />";
+       currentElement.innerHTML += "margin-top: " + currentElementStyle.getPropertyValue("margin-top") + ";<br />";
+       currentElement.innerHTML += "margin-right: " + currentElementStyle.getPropertyValue("margin-right") + ";<br />";
+       currentElement.innerHTML += "margin-bottom: " + currentElementStyle.getPropertyValue("margin-bottom") + ";<br />";
+       currentElement.innerHTML += "margin-left: " + currentElementStyle.getPropertyValue("margin-left") + ";<br />";
+       currentElement.innerHTML += "<br />outline: " + currentElementStyle.getPropertyValue("outline") + ";<br />";
+       currentElement.innerHTML += "outline-offset: " + currentElementStyle.getPropertyValue("outline-offset") + ";<br />";
+    }
+</script>
+<style type="text/css">
+   /* Styling the "body" element. */ 
+   body{
+    background-image: url(https://i.pinimg.com/originals/5f/d7/a6/5fd7a645f7d56f39da86ad9aa20f679e.jpg);
+    font-family: monospace;
+    font-size: small;
+   }
+
+   /* Styling the "h1 (heading)" element. */ 
+   h1{
+    background-color: blue;
+    color: lightsalmon;
+    margin: 5%; /* Adding a margin of about 5%. */
+    padding: 5%; /* Adding a padding of about 5%. */
+    text-align: center;
+    text-decoration-line: overline underline;
+    text-decoration-style: wavy;
+   }
+
+   /* Styling  all the "section" elements with common attributes. */
+   section {
+    background-clip: padding-box;
+    background-color: rgba(0%, 0%, 0%, 0.5);
+    color: yellow;
+
+    height: 400px;
+    width: 600px;   
+   
+    margin-top: 5%; /* Adding a margin at top of about 5%. */
+    margin-right: auto; /* Setting the margin at right to "auto". */
+    margin-bottom: auto;  /* Setting the margin at bottom to "auto". */
+    margin-left: auto;  /* Setting the margin at left to "auto". */
+
+    padding-top: 6%; /* Setting the top padding to 6%. */
+    padding-right: 0%; /* Setting the right padding to 0%. */
+    padding-bottom: 8%; /* Setting the bottom padding to 8%. */
+    padding-left: 4%; /* Setting the left padding to 4%. */
+
+    outline-offset: 8px; /* Setting the offset for outline to 8px. */
+   }
+
+   /* Styling the "section" element with ID "sectionA". */
+   #sectionA {
+    /* Specifying the width, style and color for all(top, right, bottom, left) borders.*/
+    border: 3px solid blue;  
+    /* Specifying the border radius for all(top-left, top-right, bottom-right, bottom-left) corners of the section. */
+    border-radius: 20%;
+    /* Specifying the width, style and color for the outline.*/
+    outline: 15px solid hsla(0, 100%, 50%, 0.5);
+   }
+
+   /* Styling the "section" element with ID "sectionB". */
+   #sectionB {
+    /* Specifying the width for all(top, right, bottom, left) borders.*/
+    border-width: 3px;
+    /* Specifying the style for all(top, right, bottom, left) borders.*/
+    border-style: solid;
+    /* Specifying the color for all(top, right, bottom, left) borders.*/
+    border-color: blue;
+
+    /* Specifying the border radius for all(top-left, top-right, bottom-right, bottom-left) corners of the section. */
+    border-radius: 20%;
+    
+    /* Specifying the width, style and color for the outline.*/
+    outline: 25px solid hsla(30, 100%, 50%, 0.5);
+   }
+
+   /* Styling the "section" element with ID "sectionC". */
+   #sectionC {
+    /* Specifying the width for all(top, right, bottom, left) borders.*/
+    border-width: 15px 10px;
+    /* Specifying the style for all(top, right, bottom, left) borders.*/
+    border-style: solid dotted;
+    /* Specifying the color for all(top, right, bottom, left) borders.*/
+    border-color: crimson blue;
+    
+    /* Specifying the border radius for all(top-left, top-right, bottom-right, bottom-left) corners of the section. */
+    border-radius: 20% 40%;
+    
+    /* Specifying the width, style and color for the outline.*/
+    outline: 25px solid hsla(90, 100%, 50%, 0.5);
+   }
+
+   /* Styling the "section" element with ID "sectionD". */
+   #sectionD {
+    /* Specifying the width for all(top, right, bottom, left) borders.*/
+    border-width: 15px 10px 5px;
+    /* Specifying the style for all(top, right, bottom, left) borders.*/
+    border-style: solid dotted dashed;
+    /* Specifying the color for all(top, right, bottom, left) borders.*/
+    border-color: crimson blue green;
+
+    /* Specifying the border radius for all(top-left, top-right, bottom-right, bottom-left) corners of the section. */
+    border-radius: 20% 40% 20% 40%;
+    
+    /* Specifying the width, style and color for the outline.*/
+    outline: 25px solid hsla(120, 100%, 50%, 0.5);
+   }
+
+   /* Styling the "section" element with ID "sectionE". */
+   #sectionE {
+    /* Specifying the width, style and color for top border.*/
+    border-top: 5px solid crimson;
+    /* Specifying the width, style and color for right border.*/
+    border-right: 5px solid green;
+    /* Specifying the width, style and color for bottom border.*/
+    border-bottom: 5px solid blue;
+    /* Specifying the width, style and color for left border.*/
+    border-left: 5px solid chocolate;
+
+    /* Specifying the border radius for all(top-left, top-right, bottom-right, bottom-left) corners of the section. */
+    border-radius: 20% 40% 20% 40%;
+
+    /* Specifying the width, style and color for the outline.*/
+    outline:  25px double hsla(240, 100%, 50%, 0.3);;
+   }
+
+   /* Styling the "section" element with ID "sectionF". */
+   #sectionF {
+    /* Specifying the width for all(top, right, bottom, left) borders.*/
+    border-width: 25px 20px 15px 10px;
+    /* Specifying the style for all(top, right, bottom, left) borders.*/
+    border-style: solid dotted dashed double;
+    /* Specifying the color for all(top, right, bottom, left) borders.*/
+    border-color: crimson blue green violet;
+
+    /* Specifying the border radius for all(top-left, top-right, bottom-right, bottom-left) corners of the section. */
+    border-radius: 20% 40% 20% 40%;
+    
+    /* Specifying the width of the outline.*/
+    outline-width: 25px;
+    /* Specifying the style of the outline.*/
+    outline-style: dashed;
+    /* Specifying the color of the outline.*/
+    outline-color: hsla(180, 100%, 50%, 0.7);
+   }
+
+   /* Styling the "section" element with ID "sectionG". */
+   #sectionG {
+    border-top-width: 20px; /* Specifying the width for the top border.*/
+    border-right-width: 16px; /* Specifying the width for the right border.*/
+    border-bottom-width: 10px; /* Specifying the width for the bottom border.*/
+    border-left-width: 8px; /* Specifying the width for the left border.*/
+
+    border-top-style: solid; /* Specifying the style for the top border.*/
+    border-right-style:  dotted; /* Specifying the style for the right border.*/
+    border-bottom-style: double; /* Specifying the style for the bottom border.*/
+    border-left-style: dashed; /* Specifying the style for the left border.*/
+
+    border-top-color: darkred; /* Specifying the color for the top border.*/
+    border-right-color: darkorange; /* Specifying the color for the right border.*/
+    border-bottom-color: darkmagenta; /* Specifying the color for the bottom border.*/
+    border-left-color: darkgreen;/* Specifying the color for the left border.*/
+
+    /* Specifying the border radius for top-left corner of the section. */
+    border-top-left-radius: 20%;
+    /* Specifying the border radius for top-right corner of the section. */
+    border-top-right-radius: 40%;
+    /* Specifying the border radius for bottom-right corner of the section. */
+    border-bottom-right-radius: 60%;
+    /* Specifying the border radius bottom-left corner of the section. */
+    border-bottom-left-radius: 70%;
+
+    outline-width: 25px; /* Specifying the width of the outline.*/
+    outline-style: dotted; /* Specifying the style of the outline.*/
+    outline-color: hsla(0, 0%, 50%, 0.5); /* Specifying the color of the outline.*/
+   }
+</style>
+<body>
+    <h1>CSS Border, Margin, Padding & Outline</h1>
+
+    <section id="sectionA"><script>printSectionProperties("sectionA")</script></section>
+
+    <section id="sectionB"><script>printSectionProperties("sectionB")</script></section>
+
+    <section id="sectionC"><script>printSectionProperties("sectionC")</script></section>
+
+    <section id="sectionD"><script>printSectionProperties("sectionD")</script></section>
+    
+    <section id="sectionE"><script>printSectionProperties("sectionE")</script></section>
+
+    <section id="sectionF"><script>printSectionProperties("sectionF")</script></section>
+
+    <section id="sectionG"><script>printSectionProperties("sectionG")</script></section>
+</body>
+</html>
