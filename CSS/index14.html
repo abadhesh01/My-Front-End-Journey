@@ -1,0 +1,223 @@
+
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Lesson learned:
+    ---------------
+    CSS Height And Width Properties: [1] height
+                                     [2] width
+                                     [3] min-height
+                                     [4] max-height
+                                     [5] min-width
+                                     [6] max-width
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.                      
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Height And Width</title>
+    <script type="text/javascript">
+
+     function getPinkBoxCSS() {
+        /* This function returns all the CSS properties for "div" element with id "pinkBox". */
+        let pinkBox = document.getElementById("pinkBox");
+        let pinkBoxCSS = window.getComputedStyle(pinkBox, null);
+        return pinkBoxCSS;
+     }
+
+     function displayHeight() {
+        /* 
+         * This function displays the current "height" of the "div" element with id "pinkBox" 
+         * at "span" element with id "heightDisplay".
+         */      
+        document.getElementById("heightDisplay").innerHTML = getPinkBoxCSS().getPropertyValue("height");
+     } 
+
+     function displayWidth() {    
+        /* 
+         * This function displays the current "width" of the "div" element with id "pinkBox" 
+         * at "span" element with id "widthDisplay".
+         */
+        document.getElementById("widthDisplay").innerHTML = getPinkBoxCSS().getPropertyValue("width");
+     } 
+
+     function applyChangesToPinkBox() {
+        /* 
+         * This function applies the user defined "height" and "width"  
+         * for "div" element with id "pinkBox". 
+         */
+
+        /* STEP-1: Getting the user defined "height" from the user input with id "HEIGHT". */
+        let newHeight = parseInt(document.getElementById("HEIGHT").value);
+
+        /* STEP-2: Getting the user defined "width" from the user input with id "WIDTH". */
+        let newWidth = parseInt(document.getElementById("WIDTH").value);
+        
+        /* STEP-3: Getting all the CSS properties for "div" element with id "pinkBox". */
+        let pinkBoxStyle = document.getElementById("pinkBox").style;
+        
+        /* STEP-4: Updating the "height" for "div" element with id "pinkBox".*/
+        pinkBoxStyle.height = newHeight + "px";
+
+        /* STEP-5: Updating the "width" for "div" element with id "pinkBox".*/
+        pinkBoxStyle.width = newWidth + "px";
+
+        /* STEP-6: Displaying the updated "height" of the "div" element with id "pinkBox". */
+        displayHeight();
+
+        /* STEP-7: Displaying the updated "width" of the "div" element with id "pinkBox" */
+        displayWidth();
+     }
+
+    </script>
+    <style type="text/css">
+      body {
+        background-color: burlywood;
+        color: blue;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: larger;
+        font-weight: bold;
+      } 
+
+      h1 {
+        text-align: center;
+      }
+
+      section {
+        background-clip: padding-box;
+        display: flex;
+        height: 500px;
+        width: 1400px;
+      }
+
+      section section {
+        border: 3px solid darkblue;
+        margin: 1%;
+      }
+
+      label {
+        margin: 1%;
+      }
+
+      span {
+        color: crimson;
+      }
+
+      [type="number"], [type="button"] {
+        border: 3px solid green;
+        color: crimson;
+        font-weight: bold;   
+        margin: 1%; 
+      }
+
+      [type="number"] {
+        width: 10%;
+      }
+ 
+      [type="button"] {
+        background-color: lightgreen;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+        height: fit-content;
+        width: fit-content;
+      }
+
+      [type="button"]:hover {
+        background-color: crimson;
+        color: lightgreen;
+      }
+
+      [type="button"]:active {
+        background-color: darkslateblue;
+        color: lightgreen;
+      }
+
+      #playGround {
+        background-color: cyan;
+      }
+
+      #controller {
+        background-color: lightgrey;
+        display: inline-block;
+      }
+
+      /* Attention Please! */
+      #pinkBox {
+        background-color: pink;
+        border: 3px solid darkred;
+        margin: auto;
+        /* Come Over Here! */
+        height: 200px; /* Initial Height.  */
+        width: 200px; /* Initial Width. */
+        min-height: 100px; /* Minimum Possible Height. */
+        max-height: 450px; /* Maximum Possible Height. */
+        min-width: 100px; /* Minimum Possible Width. */
+        max-width: 600px; /* Maximum Possible Width. */
+      }
+
+    </style>
+</head>
+<body onload="displayHeight(), displayWidth()">
+    <h1>CSS Height And Width</h1>
+
+    <section>
+        <section id="playGround">
+          <div id="pinkBox"></div> <!--This is the PINK BOX.-->
+        </section>
+    
+        <section id="controller">
+         <!-- Displaying the current HEIGHT of the PINK BOX. -->   
+         <label>Current HEIGHT of the pink box =</label>
+         <span id="heightDisplay"></span>
+         <br />
+
+         <!-- Displaying the current WIDTH of the PINK BOX. -->
+         <label>Current WIDTH of the pink box =</label> 
+         <span id="widthDisplay"></span>
+         <br />  
+
+         <!-- Taking the HEIGHT of the PINK BOX as an user input. -->
+         <label>Enter the height of the pink box: </label>   
+         <input id="HEIGHT" type="number" value="0" min="0" max="999">
+         <span>px</span>
+         <br /> 
+
+         <!-- Taking the WIDTH of the PINK BOX as an user input. -->
+         <label>Enter the width of the pink box: </label>
+         <input id="WIDTH" type="number" value="0" min="0" max="999">
+         <span>px</span>
+         <br />
+            
+         <!-- Button to apply the user-defined change in HEIGHT and WIDTH of the PINK BOX. -->
+         <input type="button" value="Apply Changes" onclick="applyChangesToPinkBox()">
+         <br /><br />
+
+         <!-- Some Important Notes -->
+         <label><span style="text-decoration: underline overline wavy 2px;">IMPORTANT NOTE</span></label>
+         <br />
+         <label>* MIN-HEIGHT of the pink box = </label>
+         <span><script>document.write(getPinkBoxCSS().getPropertyValue("min-height"));</script></span>
+         <br />
+         <label>* MAX-HEIGHT of the pink box =</label>
+         <span><script>document.write(getPinkBoxCSS().getPropertyValue("max-height"));</script></span>
+         <br /><br />
+         <label>* MIN-WIDTH of the pink box = </label>
+         <span><script>document.write(getPinkBoxCSS().getPropertyValue("min-width"));</script></span>
+         <br />
+         <label>* MAX-WIDTH of the pink box =</label>
+         <span><script>document.write(getPinkBoxCSS().getPropertyValue("max-width"));</script></span>
+         <br />
+         
+        </section> 
+    </section>
+</body>
+</html>
