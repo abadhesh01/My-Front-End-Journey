@@ -1,0 +1,254 @@
+
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Lesson learned:
+    ---------------
+    CSS Text Properties: [A] Text Color
+                         ...............
+                            [1] color
+
+                         [B] Text Alignment
+                         ..................
+                            [1] text-align
+                            [2] text-align-last
+                            [3] vertical-align
+
+                         [C] Text Direction
+                         ..................
+                            [1] direction
+                            [2] unicode-bidi
+                         
+                         [D] Text Decoration
+                         ...................
+                            [1] text-decoration
+                            [2] text-decoration-line
+                            [3] text-decoration-style
+                            [4] text-decoration-color
+                            [5] text-decoration-thickness
+
+                         [E] Text Transformation
+                         .......................
+                            [1] text-transformation
+
+                         [F] Text Spacing
+                         ................
+                             [1] letter-spacing
+                             [2] word-spacing
+                             [3] line-height
+                             [4] text-indent
+                             [5] white-space
+
+                         [G] Text Shadow
+                         ...............
+                            [1] text-shadow
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Demo</title>
+    <script src="tools.js"></script>
+    <style type="text/css">
+      body {
+        background-color: lightgray;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+      }
+
+      /* Styling the "h1" heading element. */
+      h1 {
+        color: crimson; /* Specifying the color of the text for "h1" heading element to crimson. */
+        text-align: center; /* Aligning the heading to center of the page. */
+        text-decoration: overline underline darkslateblue wavy 5px; /* Decorating the heading in a single declaration. */ 
+        text-transform: capitalize; /* Capitalizing each letter of each word of the heading. */
+        text-shadow: -2px 5px 3px blueviolet; /* Applying shadow to the heading. */
+      }
+
+      /* Common styling for all the "section" elements. */
+      section {
+        background-color: lightgreen;
+        border: 5px solid green;
+        color: blue; /* Specifying the color of the text to "blue" for all the "section" elements. */
+        height: fit-content;
+        font-size:  x-large;
+        margin-top: 1%;
+        margin-right: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        padding: 0.5%;
+        width: 900px;
+      }
+
+      section:hover {
+        background-color: pink;
+      }
+
+      section:active {
+        background-color: yellow;
+      }
+
+      span {
+        background-color: lightskyblue;
+        font-weight: bold;
+        font-variant: small-caps;
+      }
+
+      /* Styling all the text inside section elements with specified id from now onwards. */
+
+      #sectionA {
+        /* Handling white spaces for the "section" element.
+         * Removing wrapping from the "section" element. */
+        white-space: nowrap; 
+      }
+
+      #sectionC, #sectionG {
+        text-align: justify; /* Justifying text alignment for the "section" elements. */
+      }
+
+      #sectionD, #sectionG {
+        text-align-last: center; /* Justifying text alignment for the last line of the text for "section" elements. */
+      }
+
+      #sectionE, #sectionG {
+        /* Decorating the text for the "section" elements. */
+        text-decoration-line: line-through; /* Specifying the decoration line(overline / underline / line-through) for the text. */
+        text-decoration-color: crimson; /* Specifying the color for the text decoration. */
+        text-decoration-style: double; /* Specifying the style for the text decoration. */
+        text-decoration-thickness: 5%; /* Specifying the thickness of the text decoration. */
+      }
+
+      #sectionF, #sectionG {
+        /* Providing space(s) for the text inside "section" elements. */
+        letter-spacing: 5px; /* Specifying the space between the letters. */
+        word-spacing: 5%; /* Specifying the space between the words. */
+        line-height: 150%; /* Specifying the space between the lines. */
+        text-indent: 30%; /* Specifying the starting position for the first line of the text inside the "section" elements. */
+      }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        Note that, all characters of "h1" heading element are in lower case and the capitalization for 
+        the first letter of each word for "h1" heading element is specified in "style" element.
+    -->
+    <h1>css text demo</h1> 
+
+    <section id="sectionA">
+        <span>This is a dummy paragraph with <q>no word wrapping</q>.</span>
+        <script type="text/javascript">
+            document.write(generateDummyText(100));
+        </script>
+        <span><br />Sample last line of the text.</span>
+    </section>
+
+    <section id="sectionB">
+        <span>This is a dummy paragraph.</span>
+        <script type="text/javascript">
+            document.write(generateDummyText(100));
+        </script>
+        <span><br />Sample last line of the text.</span>
+    </section>
+
+    <section id="sectionC">
+        <span>This is a dummy paragraph with <q>justified text alignment</q>.</span>
+        <script type="text/javascript">
+            document.write(generateDummyText(100));
+        </script>
+        <span><br />Sample last line of the text.</span>
+    </section>
+
+    <section id="sectionD">
+        <span>This is a dummy paragraph with <q>last line of the text aligned to center</q>.</span>
+        <script type="text/javascript">
+            document.write(generateDummyText(100));
+        </script>
+        <span><br />Sample last line of the text.</span>
+    </section>
+
+    <section id="sectionE">
+        <span>
+            This is a dummy paragraph with <q>text-decoration-line(line-through), text-decoration-color(crimson),
+            text-decoration-style(double) and text-decoration-thickness(5%) applied</q>.
+        </span>
+        <script type="text/javascript">
+            document.write(generateDummyText(100));
+        </script>
+        <span><br />Sample last line of the text.</span>
+    </section>
+
+    <section id="sectionF">
+        <span>
+            This is a dummy paragraph with <q>word-spacing(5%), letter-spacing(5px), 
+            line-height(150%) and text-indent(30%) applied</q>.
+        </span>
+        <script type="text/javascript">
+            document.write(generateDummyText(100));
+        </script>
+        <span><br />Sample last line of the text.</span>
+    </section>
+
+    <section id="sectionG">
+        <span>This is a dummy paragraph with <q>css properties of almost all the above sections applied</q>.</span>
+        <script type="text/javascript">
+            document.write(generateDummyText(100));
+        </script>
+        <span><br />Sample last line of the text.</span>
+    </section>
+
+    <!-- Demo for "vertical-align" property. -->
+    <section id="sectionH" style="line-height: 200%; text-decoration: line-through 2px;">
+        <!-- Specifying the vertical alignment for each of the below line using inline styling.  -->
+        The <span>word</span> is vertically aligned as <q>default</q>.<br />
+        The <span style="vertical-align: auto;">word</span> is vertically aligned as <q>auto</q>. <br />
+        The <span style="vertical-align: baseline;">word</span> is vertically aligned as <q>baseline</q>. <br />
+        The <span style="vertical-align: sub;">word</span> is vertically aligned as a <q>subscript</q>. <br />
+        The <span style="vertical-align: super;">word</span> is vertically aligned as a <q>superscript</q>. <br />
+        The <span style="vertical-align: text-bottom;">word</span> is vertically aligned as <q>text-bottom</q>. <br />
+        The <span style="vertical-align: text-top;">word</span> is vertically aligned as <q>text-top</q>. <br />
+    </section>
+
+    <!-- Specifying the direction for the below text lines using inline styling. -->
+    <section id="sectionI">
+        <div>
+            [1] Displaying the text direction for the current text. 
+            <br />
+            (No "direction" or "unicode-bidi" property applied.)
+        </div>
+
+        <br />
+
+        <div style="direction: ltr; unicode-bidi: bidi-override;">
+            [2] Displaying the text direction for the current text. 
+            <br />
+            (CSS: [direction: ltr; unicode-bidi: bidi-override;])
+        </div>
+
+        <br />
+
+        <div style="direction: rtl;">
+            [3] Displaying the text direction for the current text. 
+            <br />
+            (CSS: [direction: rtl;])
+        </div>
+
+        <br />
+
+        <div style="direction: rtl; unicode-bidi: bidi-override;">
+            [4] Displaying the text direction for the current text. 
+            <br />
+            (CSS: [direction: rtl; unicode-bidi: bidi-override;])
+        </div>
+    </section>    
+</body>
+</html>
