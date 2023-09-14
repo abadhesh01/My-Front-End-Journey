@@ -1,0 +1,117 @@
+
+<!--
+  Author: Abadhesh Mishra
+  Email: abadheshmishra01@gmail.com
+  GitHub: https://github.com/abadhesh01
+  GitLab: https://gitlab.com/abadhesh01
+-->
+
+<!--
+    Lesson Learned:
+    ---------------
+    CSS Font Properties => [1] font
+                           [2] font-family
+                           [3] font-size
+                           [4] font-style
+                           [5] font-variant
+                           [6] font-weight
+
+    CAUTION: Observe the code even with minute details to grasp all the learnings.                        
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Font Demo</title>
+    <style type="text/css">
+        body {
+            color: blue;
+            background-color: beige;
+            font-size: large; /* Setting the "font-size" of the "body" element to "large". */
+        }
+
+        h1 {
+            color: crimson;
+            text-align: center;
+            text-shadow: -2px 2px 2px green;
+        }
+
+        section {
+            border: 5px solid darkblue;
+            margin: auto;
+            padding: 1%;
+            height: fit-content;
+            width: fit-content;
+        }
+
+        span {
+           background-color: yellow; 
+           display: block;
+           margin: 1% 1%;
+        }
+
+        span:hover {
+            background-color: pink;
+        }
+
+        span:active {
+            background-color: lightskyblue;
+        }
+
+        #myFont {
+            /*
+              The following CSS Font properties are specified in the "font" shorthand property respectively -
+              [1] font-style: italic;
+              [2] font-variant: normal;
+              [3] font-weight: bold;
+              [4] font-size: x-large;
+              [5] font-family: 'Comic Sans MS', 'Comic Sans', cursive;   
+            */
+            font: italic normal bold x-large 'Comic Sans MS', 'Comic Sans', cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Font Demo</h1>
+
+    <section>
+        <!-- Sample text with no CSS FONT properties applied. -->
+        <span>This is a sample text with no CSS FONT properties applied.</span>
+        
+        <!-- Sample text with CSS "font-family" property set to "Comic Sans MS, Comic Sans, cursive". -->
+        <span style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">
+            This is a sample text with CSS <q>font-family</q> property set to <q>Comic Sans MS, Comic Sans, cursive</q>.
+        </span>
+
+        <!-- Sample text with CSS "font-size" property set to "x-large". -->
+        <span style="font-size: x-large;">
+            This is a sample text with CSS <q>font-size</q> property set to <q>x-large</q>.
+        </span>
+
+        <!-- Sample text with CSS "font-style" property set to "italic". -->
+        <span style="font-style: italic;">
+            This is a sample text with CSS <q>font-style</q> property set to <q>italic</q>.
+        </span>
+
+        <!-- Sample text with CSS "font-variant" property set to "small-caps". -->
+        <span style="font-variant: small-caps;">
+            This is a sample text with CSS <q>font-variant</q> property set to <q>small-caps</q>.
+        </span>
+
+        <!-- Sample text with CSS "font-weight" property set to "bold". -->
+        <span style="font-weight: bold;">
+            This is a sample text with CSS <q>font-weight</q> property set to <q>bold</q>.
+        </span>
+        
+        <!-- Sample text with CSS "font" shorthand property set to  
+             "italic normal bold x-large 'Comic Sans MS', 'Comic Sans', cursive".
+        -->
+        <span id="myFont">
+            This is a sample text with CSS <q>font</q> shorthand property set to 
+            <q>italic normal bold x-large 'Comic Sans MS', 'Comic Sans', cursive</q>.
+       </span>
+    </section>
+</body>
+</html>
