@@ -376,6 +376,8 @@
    
    [12] For more details, visit:
         https://www.w3schools.com/css/css_background_shorthand.asp
+
+   [13] For demo, refer to "index10.html", "index11.html" and "index12.html" files.    
    
 -> CSS Border:
    ***********
@@ -406,6 +408,8 @@
    [11] For more details, visit:
         https://www.w3schools.com/css/css_border.asp
     
+   [12] For demo, refer to "index13.html" file.     
+    
 -> CSS Margin:
    ***********
    # Definition:: "Margins are used to create space around the elements', outside of any defined borders."
@@ -427,6 +431,8 @@
    
    [6] For more details, visit:
        https://www.w3schools.com/css/css_margin.asp
+   
+   [7] For demo, refer to "index13.html" file.    
      
 -> CSS Padding:
    ************
@@ -455,6 +461,8 @@
    [7] For more details, visit:
        https://www.w3schools.com/css/css_padding.asp
    
+   [8] For demo, refer to "index13.html" file.    
+   
 -> CSS Height and Width:
    *********************
    [1] height -	Specifies the height of the content area of an element.
@@ -482,7 +490,9 @@
                the "max-width" property will be used and the "width" property will be ignored.   
    
    [9] For more details, visit:
-       https://www.w3schools.com/css/css_dimension.asp           
+       https://www.w3schools.com/css/css_dimension.asp        
+   
+   [10] For demo, refer to "index14.html" file.       
    
 -> CSS Box Model:
    **************
@@ -524,6 +534,8 @@
                      
    [8] For more details, visit:
        https://www.w3schools.com/css/css_outline.asp
+
+   [9] For demo, refer to "index13.html" file.    
                                 
 -> CSS Text:
    *********
@@ -600,6 +612,8 @@
        
        [7.3] For more details, visit:
              https://www.w3schools.com/css/css_text_shadow.asp
+       
+   [8] For demo, refer to "index15.html" file.         
    
 -> CSS Font:
    *********
@@ -629,13 +643,13 @@
        
        [2.5] font-weight - Specifies the weight of a font.   
        
-       [2.6] text-decoration - * Shorthand property for setting all the font properties in one declaration.
-                               * It specifies the following individual properties respectively:
-                                 [2.6.1] font-style
-                                 [2.6.2] font-variant
-                                 [2.6.3] font-weight
-                                 [2.6.4] font-size (require) /line-height
-                                 [2.6.5] font-family (required)
+       [2.6] font - * Shorthand property for setting all the font properties in one declaration.
+                    * It specifies the following individual properties respectively:
+                      [2.6.1] font-style
+                      [2.6.2] font-variant
+                      [2.6.3] font-weight
+                      [2.6.4] font-size (require) /line-height
+                      [2.6.5] font-family (required)
                          
    [3] For more details; visit:
        https://www.w3schools.com/css/css_font_shorthand.asp
@@ -645,6 +659,6 @@
        
    [5] For a list of font families; visit:
        https://www.w3.org/Style/Examples/007/fonts.en.html           
-
-
+    
+   [6] For demo, refer to "index16.html" file.
        
